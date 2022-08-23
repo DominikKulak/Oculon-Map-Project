@@ -750,6 +750,16 @@
 /obj/table/auto,
 /turf/simulated/floor/neutral,
 /area/space)
+"aNh" = (
+/obj/machinery/disposal/mail{
+	mail_tag = "cargo";
+	mailgroup = "cargo";
+	message = "1";
+	name = "mail chute-'Cargo'"
+	},
+/obj/disposalpipe/trunk/mail/east,
+/turf/simulated/floor/yellowblack,
+/area/space)
 "aNk" = (
 /obj/rack,
 /turf/simulated/floor/blueblack/corner,
@@ -1145,13 +1155,6 @@
 	},
 /turf/simulated/floor/carpet/grime,
 /area/space)
-"bkg" = (
-/obj/disposalpipe/segment/produce{
-	dir = 4
-	},
-/obj/disposalpipe/segment/mail,
-/turf/simulated/floor/black,
-/area/space)
 "bkG" = (
 /obj/decal/boxingrope{
 	dir = 8
@@ -1202,9 +1205,6 @@
 /area/space)
 "boz" = (
 /obj/disposalpipe/segment,
-/obj/disposalpipe/segment/mail{
-	dir = 4
-	},
 /turf/simulated/floor/yellow/corner,
 /area/space)
 "boD" = (
@@ -1786,6 +1786,15 @@
 	icon_state = "line1"
 	},
 /turf/simulated/floor/twotone/yellow,
+/area/space)
+"bMj" = (
+/obj/disposalpipe/segment/mail{
+	dir = 1;
+	icon_state = "pipe-c"
+	},
+/turf/simulated/floor/neutral/side{
+	dir = 8
+	},
 /area/space)
 "bMt" = (
 /obj/disposalpipe/segment/mail{
@@ -3571,13 +3580,6 @@
 	dir = 4
 	},
 /area/space)
-"dEJ" = (
-/obj/machinery/disposal/mail/small/autoname/qm/north,
-/obj/disposalpipe/trunk/mail/south,
-/turf/simulated/floor/yellowblack{
-	dir = 1
-	},
-/area/space)
 "dEW" = (
 /obj/stool/bed,
 /obj/item/clothing/suit/bedsheet/blue,
@@ -4358,8 +4360,9 @@
 	},
 /area/space)
 "eyb" = (
-/obj/disposalpipe/switch_junction/left/east{
-	mail_tag = "mining"
+/obj/disposalpipe/segment/mail{
+	dir = 4;
+	icon_state = "pipe-c"
 	},
 /turf/simulated/floor/yellow/side,
 /area/space)
@@ -8800,6 +8803,12 @@
 	icon_state = "fred2"
 	},
 /area/space)
+"juT" = (
+/obj/disposalpipe/switch_junction/right/north{
+	mail_tag = "mining"
+	},
+/turf/simulated/floor/airless/grasslush,
+/area/space)
 "jvz" = (
 /obj/table/reinforced/auto,
 /obj/item/cargotele{
@@ -12608,12 +12617,6 @@
 	icon_state = "blue2"
 	},
 /area/space)
-"nFs" = (
-/obj/disposalpipe/segment/transport{
-	dir = 4
-	},
-/turf/simulated/floor/plating,
-/area/space)
 "nFt" = (
 /obj/storage/closet/fire,
 /turf/simulated/floor/orangeblack,
@@ -16420,6 +16423,15 @@
 	},
 /turf/simulated/floor/plating/jen,
 /area/space)
+"rEu" = (
+/obj/disposalpipe/segment,
+/obj/disposalpipe/segment/mail{
+	dir = 4
+	},
+/turf/simulated/floor/yellow/side{
+	dir = 4
+	},
+/area/space)
 "rEz" = (
 /obj/disposalpipe/segment/mail{
 	dir = 4
@@ -16535,17 +16547,6 @@
 /area/space)
 "rJP" = (
 /turf/simulated/floor/twotone/yellow,
-/area/space)
-"rKU" = (
-/obj/disposalpipe/segment{
-	dir = 4;
-	level = -1
-	},
-/obj/disposalpipe/segment/mail{
-	dir = 4;
-	icon_state = "pipe-c"
-	},
-/turf/simulated/floor,
 /area/space)
 "rLk" = (
 /obj/machinery/atmospherics/unary/cold_sink/freezer/cryo/north,
@@ -17673,17 +17674,6 @@
 	},
 /obj/item/sheet/glass/reinforced,
 /turf/simulated/floor/plating/jen,
-/area/space)
-"sVn" = (
-/obj/disposalpipe/segment{
-	dir = 4;
-	level = -1
-	},
-/obj/disposalpipe/segment/mail{
-	dir = 8;
-	icon_state = "pipe-c"
-	},
-/turf/simulated/floor,
 /area/space)
 "sWE" = (
 /obj/table/auto,
@@ -21061,6 +21051,12 @@
 	},
 /turf/unsimulated/floor/red,
 /area/space)
+"wzu" = (
+/obj/machinery/door/airlock/pyro/maintenance{
+	dir = 4
+	},
+/turf/simulated/floor/plating/jen,
+/area/space)
 "wzX" = (
 /obj/disposalpipe/segment{
 	dir = 4;
@@ -21451,6 +21447,9 @@
 /area/space)
 "wRz" = (
 /obj/disposalpipe/segment/produce,
+/obj/disposalpipe/segment/mail{
+	dir = 4
+	},
 /turf/simulated/floor/yellowblack/corner{
 	dir = 4
 	},
@@ -61629,7 +61628,7 @@ bTC
 cTC
 smX
 jbr
-nFs
+tDA
 kMz
 kMz
 rxN
@@ -62233,7 +62232,7 @@ beR
 uEA
 smX
 jbr
-nFs
+tDA
 kMz
 kMz
 rxN
@@ -62837,7 +62836,7 @@ beR
 uEA
 smX
 jbr
-nFs
+tDA
 kMz
 kMz
 diZ
@@ -63441,7 +63440,7 @@ aCV
 uEA
 smX
 jbr
-nFs
+tDA
 kMz
 kMz
 diZ
@@ -64882,7 +64881,7 @@ kMQ
 jgc
 drU
 beR
-bZP
+aNh
 jiY
 rxN
 dKI
@@ -64893,8 +64892,8 @@ yfQ
 hjg
 dNi
 hjS
-gnO
-bPi
+pAs
+bMj
 bPi
 bPi
 bPi
@@ -65196,7 +65195,7 @@ rTZ
 kMI
 wbl
 boz
-hhc
+rEu
 hhc
 hhc
 hhc
@@ -65482,11 +65481,11 @@ qCM
 qCM
 qCM
 qCM
-dEJ
-uAS
-bub
-bkg
-bub
+kMQ
+jgc
+beR
+pwA
+qeN
 bub
 bub
 bub
@@ -65498,7 +65497,7 @@ eDt
 koL
 hjS
 eyb
-vNM
+juT
 oJT
 vNM
 kTw
@@ -70048,7 +70047,7 @@ qCM
 qCM
 qCM
 qCM
-kgl
+oRR
 qCM
 qCM
 eOh
@@ -74583,7 +74582,7 @@ diZ
 diZ
 diZ
 qCM
-eOh
+wzu
 vju
 qCM
 diZ
@@ -79743,8 +79742,8 @@ qCM
 diZ
 asu
 vaw
-rKU
-ryw
+hLx
+rid
 kds
 wpX
 wpX
@@ -80045,8 +80044,8 @@ diZ
 diZ
 asu
 vez
-sVn
-uPO
+vYM
+ryw
 bvC
 hjg
 rDp
@@ -85233,7 +85232,7 @@ qCM
 qCM
 qCM
 qCM
-kgl
+oRR
 rsc
 rsc
 pOq
