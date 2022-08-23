@@ -1273,6 +1273,22 @@
 /obj/stool/chair,
 /turf/simulated/floor/specialroom/bar,
 /area/space)
+"bru" = (
+/obj/table/reinforced/bar/auto{
+	name = "table"
+	},
+/obj/disposalpipe/segment{
+	dir = 4;
+	level = -1
+	},
+/obj/item/golf_club,
+/obj/item/golf_ball,
+/obj/item/golf_club,
+/turf/simulated/floor/carpet{
+	dir = 1;
+	icon_state = "fgreen2"
+	},
+/area/space)
 "brz" = (
 /turf/simulated/floor/dojo/sand/circle,
 /area/space)
@@ -8339,12 +8355,6 @@
 	dir = 5
 	},
 /area/space)
-"jdn" = (
-/obj/item/golf_ball,
-/turf/simulated/floor/green/side{
-	dir = 1
-	},
-/area/space)
 "jdA" = (
 /turf/simulated/floor/carpet{
 	icon_state = "blue1"
@@ -11971,7 +11981,6 @@
 /area/space)
 "njy" = (
 /obj/storage/crate/bin/lostandfound,
-/obj/item/gnomechompski,
 /turf/simulated/floor/green/side{
 	dir = 5
 	},
@@ -13466,6 +13475,12 @@
 "oNV" = (
 /obj/machinery/chem_dispenser/alcohol,
 /turf/simulated/floor/black,
+/area/space)
+"oOa" = (
+/obj/landmark/map{
+	name = "OCULION"
+	},
+/turf/space,
 /area/space)
 "oOm" = (
 /obj/stool/chair{
@@ -15150,7 +15165,6 @@
 /obj/machinery/ai_status_display{
 	pixel_y = 28
 	},
-/obj/item/golf_club,
 /turf/simulated/floor/green/side{
 	dir = 1
 	},
@@ -20209,6 +20223,9 @@
 /area/space)
 "wmP" = (
 /obj/machinery/disposal,
+/obj/disposalpipe/trunk{
+	dir = 4
+	},
 /turf/simulated/floor/blueblack{
 	dir = 6
 	},
@@ -22521,7 +22538,7 @@ diZ
 diZ
 diZ
 diZ
-diZ
+oOa
 "}
 (2,1,1) = {"
 diZ
@@ -74616,7 +74633,7 @@ rMx
 pQT
 kLH
 kLH
-pQT
+edr
 rMx
 rMx
 rMx
@@ -74918,7 +74935,7 @@ wRJ
 wRJ
 wRJ
 wRJ
-wRJ
+qHA
 wRJ
 tMw
 wRJ
@@ -75220,7 +75237,7 @@ ocG
 ocG
 ocG
 ocG
-ocG
+oXg
 ocG
 gVD
 ocG
@@ -76696,7 +76713,7 @@ lHu
 lHu
 idA
 mxi
-cLF
+bru
 vUE
 vUE
 urm
@@ -77003,7 +77020,7 @@ gTn
 ejq
 uXy
 oqQ
-jdn
+cuD
 kMI
 kMI
 kMI
