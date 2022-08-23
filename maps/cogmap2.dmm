@@ -13478,7 +13478,7 @@
 /area/space)
 "oOa" = (
 /obj/landmark/map{
-	name = "OCULION"
+	name = "COGMAP2"
 	},
 /turf/space,
 /area/space)
