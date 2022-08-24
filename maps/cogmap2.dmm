@@ -14631,7 +14631,7 @@
 /area/space)
 "pkE" = (
 /obj/disposalpipe/switch_junction/right/east{
-	mail_tag = s
+	mail_tag = "dispatch"
 	},
 /turf/simulated/floor/redblack,
 /area/space)
