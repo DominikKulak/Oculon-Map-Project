@@ -508,7 +508,11 @@
 /turf/simulated/floor/plating/jen,
 /area/space)
 "auL" = (
-/obj/machinery/conveyor/west,
+/obj/machinery/conveyor{
+	dir = 8;
+	name = "cargo belt - west";
+	operating = 1
+	},
 /obj/disposaloutlet{
 	dir = 8;
 	name = "ejection outlet"
@@ -1262,7 +1266,7 @@
 	},
 /obj/machinery/mass_driver{
 	dir = 1;
-	id = "qm_out"
+	id = "qm_dock_out"
 	},
 /obj/forcefield/energyshield/perma/doorlink{
 	desc = "A door-linked force field that prevents gasses from passing through it.";
@@ -1439,7 +1443,7 @@
 	icon_state = "0-2"
 	},
 /obj/wingrille_spawn/auto/crystal,
-/turf/simulated/floor/plating,
+/turf/simulated/floor/plating/airless,
 /area/station/ai_monitored/armory)
 "bpM" = (
 /obj/disposalpipe/segment/mail{
@@ -3462,7 +3466,11 @@
 	},
 /area/space)
 "cTq" = (
-/obj/machinery/conveyor/west,
+/obj/machinery/conveyor{
+	dir = 8;
+	name = "cargo belt - west";
+	operating = 1
+	},
 /turf/simulated/floor/plating,
 /area/space)
 "cTC" = (
@@ -5500,6 +5508,8 @@
 /area/space)
 "eLE" = (
 /obj/table/reinforced/auto,
+/obj/machinery/door/window/northright,
+/obj/access_spawn/engineering_mechanic,
 /turf/simulated/floor/yellow,
 /area/space)
 "eLN" = (
@@ -13908,6 +13918,8 @@
 	dir = 8;
 	icon_state = "pipe-c"
 	},
+/obj/machinery/door/window/northright,
+/obj/access_spawn/engineering_mechanic,
 /turf/simulated/floor/yellow,
 /area/space)
 "mJh" = (
@@ -18007,14 +18019,6 @@
 	dir = 1
 	},
 /area/space)
-"qoQ" = (
-/obj/machinery/conveyor{
-	dir = 4;
-	id = "enginesupply"
-	},
-/obj/plasticflaps,
-/turf/simulated/floor/plating/jen,
-/area/space)
 "qpd" = (
 /obj/stool/chair/wooden{
 	dir = 8
@@ -19917,7 +19921,7 @@
 	},
 /obj/cable,
 /obj/wingrille_spawn/auto/crystal,
-/turf/simulated/floor/plating/airless,
+/turf/simulated/floor/plating,
 /area/station/turret_protected/armory_outside)
 "saJ" = (
 /obj/machinery/vending/snack,
@@ -20893,11 +20897,6 @@
 /obj/table/auto,
 /obj/table/auto,
 /turf/simulated/floor/escape,
-/area/space)
-"sTv" = (
-/obj/machinery/conveyor/south,
-/obj/plasticflaps,
-/turf/simulated/floor/plating,
 /area/space)
 "sTQ" = (
 /obj/disposalpipe/segment/ejection,
@@ -23804,7 +23803,7 @@
 "vCI" = (
 /obj/machinery/mass_driver{
 	dir = 1;
-	id = "qm_out"
+	id = "qm_dock_out"
 	},
 /turf/simulated/floor/plating/jen,
 /area/space)
@@ -24943,7 +24942,11 @@
 /turf/simulated/floor/plating/jen,
 /area/space)
 "wyT" = (
-/obj/machinery/conveyor/north,
+/obj/machinery/conveyor{
+	dir = 1;
+	name = "cargo belt - north";
+	operating = 1
+	},
 /obj/plasticflaps,
 /turf/simulated/floor/plating,
 /area/space)
@@ -60440,7 +60443,7 @@ sCc
 hLx
 aAn
 lPm
-sTv
+vXG
 cTq
 rVC
 cCI
@@ -65503,7 +65506,7 @@ rxN
 bfg
 rxN
 hUS
-qoQ
+wMD
 fDt
 xhz
 xhz
@@ -74023,7 +74026,7 @@ fPG
 fPG
 fPG
 rsl
-ntE
+omz
 ntE
 ntE
 ntE
@@ -74631,7 +74634,7 @@ uTe
 uaz
 uaz
 uaz
-fFk
+omz
 asu
 qdo
 jNS
