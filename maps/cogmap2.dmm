@@ -192,7 +192,7 @@
 	powerlevel = 1
 	},
 /obj/machinery/door/poddoor/pyro{
-	id = "qm_dock";
+	id = "qm_in";
 	name = "Cargo Routing Door"
 	},
 /turf/simulated/floor/plating/jen,
@@ -2110,6 +2110,8 @@
 	dir = 1;
 	icon_state = "pipe-c"
 	},
+/obj/machinery/door/airlock/pyro/glass,
+/obj/access_spawn,
 /turf/simulated/floor/neutral/side{
 	dir = 8
 	},
@@ -4390,7 +4392,10 @@
 	},
 /area/space)
 "dIH" = (
-/obj/machinery/mass_driver,
+/obj/machinery/mass_driver{
+	drive_range = 50;
+	id = "qm_in"
+	},
 /turf/simulated/floor/plating/jen,
 /area/space)
 "dII" = (
@@ -4546,6 +4551,10 @@
 	icon_state = "0-8"
 	},
 /turf/simulated/floor/carpet/grime,
+/area/space)
+"dPm" = (
+/obj/item/clothing/shoes/magnetic,
+/turf/simulated/floor/plating/jen,
 /area/space)
 "dPB" = (
 /turf/simulated/floor/darkblue,
@@ -8299,8 +8308,8 @@
 /area/space)
 "hqG" = (
 /obj/machinery/door/poddoor/pyro{
-	id = "owlery_out";
-	name = "Cargo Door"
+	id = "sec_in";
+	name = "Cargo Routing Door"
 	},
 /obj/machinery/conveyor{
 	name = "cargo belt - south";
@@ -10577,7 +10586,8 @@
 /obj/disposalpipe/switch_junction/right/north{
 	mail_tag = "mining"
 	},
-/turf/simulated/floor/airless/grasslush,
+/obj/wingrille_spawn/auto/tuff,
+/turf/simulated/floor/plating,
 /area/space)
 "jvz" = (
 /obj/table/reinforced/auto,
@@ -19505,6 +19515,8 @@
 /obj/disposalpipe/segment/mail{
 	dir = 4
 	},
+/obj/machinery/door/airlock/pyro/glass,
+/obj/access_spawn,
 /turf/simulated/floor/yellow/side{
 	dir = 4
 	},
@@ -19923,6 +19935,13 @@
 /obj/wingrille_spawn/auto/crystal,
 /turf/simulated/floor/plating,
 /area/station/turret_protected/armory_outside)
+"sah" = (
+/obj/machinery/mass_driver{
+	drive_range = 23;
+	id = "sec_in"
+	},
+/turf/simulated/floor/plating/jen,
+/area/space)
 "saJ" = (
 /obj/machinery/vending/snack,
 /turf/simulated/floor/yellow/checker,
@@ -68217,7 +68236,7 @@ wEa
 omz
 eFC
 eOh
-eOh
+dPm
 qyH
 rxN
 kMQ
@@ -68840,7 +68859,7 @@ ohP
 lyE
 hjS
 wBT
-eil
+rxN
 tfp
 tfp
 eil
@@ -85772,7 +85791,7 @@ diZ
 diZ
 diZ
 diZ
-qAd
+rDK
 upE
 beR
 nGb
@@ -86074,7 +86093,7 @@ diZ
 diZ
 diZ
 diZ
-qAd
+rDK
 kSH
 beR
 nGb
@@ -86319,8 +86338,8 @@ qWk
 qCM
 vTE
 cCu
-dIH
-dIH
+sah
+sah
 diZ
 diZ
 diZ
