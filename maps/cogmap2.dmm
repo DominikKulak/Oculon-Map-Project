@@ -1233,7 +1233,6 @@
 	},
 /obj/forcefield/energyshield/perma/doorlink{
 	desc = "A door-linked force field that prevents gasses from passing through it.";
-	dir = 4;
 	name = "Door-linked Atmospheric Forcefield";
 	powerlevel = 1
 	},
@@ -3754,7 +3753,7 @@
 /area/space)
 "diV" = (
 /obj/machinery/computer/barcode{
-	destinations = list("Catering","Disposal","Engineering","Export","Medbay","Mining","Pod Bay","Research","Security","QM");
+	destinations = list("MedSci","Security","QM");
 	dir = 4
 	},
 /turf/simulated/floor/purple,
@@ -5635,7 +5634,7 @@
 /area/space)
 "eWk" = (
 /obj/machinery/computer/barcode/qm{
-	destinations = list("Arrivals","Catering","Disposals","Engine","Escape","Export","MedSci","Security","Trader","QM")
+	destinations = list("MedSci","Security","QM")
 	},
 /turf/simulated/floor/black,
 /area/space)
@@ -9780,7 +9779,7 @@
 "iSq" = (
 /obj/machinery/cargo_router{
 	default_direction = 2;
-	destinations = list("QM"=8,"Security"=8)
+	destinations = list("QM"=8,"Security"=8,"MedSci"=2)
 	},
 /turf/simulated/floor/plating/jen,
 /area/space)
@@ -17671,7 +17670,7 @@
 /area/space)
 "qiR" = (
 /obj/machinery/cargo_router{
-	destinations = list("QM"=8,"Security"=8)
+	destinations = list("QM"=8,"Security"=8,"MedSci"=8)
 	},
 /turf/simulated/floor/plating/jen,
 /area/space)
@@ -19067,12 +19066,6 @@
 	dir = 8
 	},
 /turf/simulated/floor,
-/area/space)
-"rxr" = (
-/obj/machinery/door/airlock/pyro/glass{
-	dir = 8
-	},
-/turf/simulated/floor/delivery,
 /area/space)
 "rxy" = (
 /obj/machinery/shuttle/engine/propulsion{
@@ -21838,7 +21831,7 @@
 /area/space)
 "tZH" = (
 /obj/machinery/cargo_router{
-	destinations = list("Security"=8);
+	destinations = list("Security"=8,"MedSci"=8);
 	default_direction = 2
 	},
 /turf/simulated/floor/plating/jen,
@@ -24712,7 +24705,6 @@
 	},
 /obj/forcefield/energyshield/perma/doorlink{
 	desc = "A door-linked force field that prevents gasses from passing through it.";
-	dir = 4;
 	name = "Door-linked Atmospheric Forcefield";
 	powerlevel = 1
 	},
@@ -66570,7 +66562,7 @@ eFC
 eFC
 omz
 eFC
-rxN
+qyH
 eFC
 sHM
 uhB
@@ -68078,7 +68070,7 @@ wvM
 rxN
 omz
 eFC
-rxr
+bfg
 rxN
 rxN
 eFC
