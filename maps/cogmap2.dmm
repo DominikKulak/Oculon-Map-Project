@@ -342,7 +342,7 @@
 	dir = 1;
 	icon_state = "pipe-c"
 	},
-/turf/simulated/floor/airless/grasslush/thinner,
+/turf/simulated/floor/grasslush/thinner,
 /area/space)
 "apg" = (
 /obj/lattice{
@@ -1470,7 +1470,7 @@
 /obj/stool/bench/sauna{
 	dir = 1
 	},
-/turf/simulated/floor/airless/grasslush,
+/turf/simulated/floor/grasslush,
 /area/space)
 "bqz" = (
 /obj/machinery/computer/power_monitor/smes{
@@ -2610,13 +2610,19 @@
 "chO" = (
 /obj/machinery/door/poddoor/pyro{
 	dir = 4;
-	id = "chapelgun";
+	id = "chapel_out";
 	name = "Chapel Mass Driver"
 	},
 /obj/machinery/mass_driver{
 	dir = 8;
-	drive_range = 6;
-	id = "eva_in"
+	drive_range = 100;
+	id = "chapel_out"
+	},
+/obj/forcefield/energyshield/perma/doorlink{
+	desc = "A door-linked force field that prevents gasses from passing through it.";
+	dir = 4;
+	name = "Door-linked Atmospheric Forcefield";
+	powerlevel = 1
 	},
 /turf/simulated/floor/plating,
 /area/space)
@@ -3657,7 +3663,11 @@
 /turf/simulated/floor/red/redblackchecker,
 /area/space)
 "cZP" = (
-/obj/machinery/conveyor/east,
+/obj/machinery/conveyor{
+	dir = 4;
+	name = "cargo belt - east";
+	operating = 1
+	},
 /turf/simulated/floor/plating/jen,
 /area/space)
 "dad" = (
@@ -4100,7 +4110,7 @@
 /area/space)
 "dvS" = (
 /obj/disposalpipe/segment,
-/turf/simulated/floor/airless/grasslush,
+/turf/simulated/floor/grasslush,
 /area/space)
 "dwc" = (
 /obj/machinery/lrteleporter,
@@ -4921,7 +4931,7 @@
 /turf/simulated/floor/shuttlebay,
 /area/space)
 "eil" = (
-/turf/simulated/floor/airless/grasslush/thinner,
+/turf/simulated/floor/grasslush/thinner,
 /area/space)
 "ein" = (
 /turf/simulated/floor/stairs{
@@ -6092,7 +6102,7 @@
 	dir = 4;
 	pixel_y = 32
 	},
-/turf/simulated/floor/airless/grasslush,
+/turf/simulated/floor/grasslush,
 /area/space)
 "fph" = (
 /turf/simulated/floor/neutral/corner{
@@ -6420,10 +6430,6 @@
 	dir = 4
 	},
 /turf/simulated/wall/auto/jen/yellow,
-/area/space)
-"fFk" = (
-/obj/machinery/conveyor/west,
-/turf/simulated/floor/plating/jen,
 /area/space)
 "fFn" = (
 /obj/table/auto,
@@ -6885,7 +6891,7 @@
 /area/space)
 "gaT" = (
 /obj/disposalpipe/segment,
-/turf/simulated/floor/airless/grasslush/thinner,
+/turf/simulated/floor/grasslush/thinner,
 /area/space)
 "gbj" = (
 /turf/simulated/floor/snowrough,
@@ -10361,6 +10367,14 @@
 	dir = 8
 	},
 /area/space)
+"jlM" = (
+/obj/machinery/conveyor{
+	dir = 1;
+	name = "cargo belt - north";
+	operating = 1
+	},
+/turf/simulated/wall/auto/reinforced/jen/yellow,
+/area/space)
 "jml" = (
 /obj/machinery/computer3/generic/med_data{
 	dir = 8
@@ -10978,7 +10992,7 @@
 	pixel_x = 4;
 	pixel_y = 14
 	},
-/turf/simulated/floor/airless/grasslush/thinner,
+/turf/simulated/floor/grasslush/thinner,
 /area/space)
 "jPR" = (
 /obj/stool/chair{
@@ -11502,7 +11516,7 @@
 /obj/disposalpipe/segment/mail{
 	dir = 4
 	},
-/turf/simulated/floor/airless/grasslush/thinner,
+/turf/simulated/floor/grasslush/thinner,
 /area/space)
 "kmd" = (
 /obj/table/reinforced/bar/auto{
@@ -11845,7 +11859,7 @@
 /obj/disposalpipe/switch_junction/left/north{
 	mail_tag = "mechanics"
 	},
-/turf/simulated/floor/airless/grasslush,
+/turf/simulated/floor/grasslush,
 /area/space)
 "kDt" = (
 /obj/disposalpipe/segment{
@@ -12162,7 +12176,7 @@
 /area/space)
 "kTw" = (
 /obj/disposalpipe/segment/mail,
-/turf/simulated/floor/airless/grasslush/thin,
+/turf/simulated/floor/grasslush/thin,
 /area/space)
 "kTz" = (
 /obj/disposalpipe/segment/mail{
@@ -12626,7 +12640,7 @@
 	dir = 4;
 	level = -1
 	},
-/turf/simulated/floor/airless/grasslush,
+/turf/simulated/floor/grasslush,
 /area/space)
 "lqT" = (
 /obj/table/wood/auto,
@@ -13857,8 +13871,8 @@
 "mFg" = (
 /obj/machinery/mass_driver{
 	dir = 8;
-	drive_range = 6;
-	id = "eva_in"
+	drive_range = 100;
+	id = "chapel_out"
 	},
 /turf/simulated/floor/black,
 /area/space)
@@ -14555,7 +14569,7 @@
 	pixel_x = 4;
 	pixel_y = 13
 	},
-/turf/simulated/floor/airless/grasslush,
+/turf/simulated/floor/grasslush,
 /area/space)
 "nmt" = (
 /obj/machinery/vending/port_a_nanomed,
@@ -15318,10 +15332,6 @@
 	dir = 1
 	},
 /area/space)
-"nUR" = (
-/obj/machinery/conveyor/north,
-/turf/simulated/floor/plating/jen,
-/area/space)
 "nUV" = (
 /obj/storage/secure/closet/medical/chemical,
 /turf/simulated/floor/blueblack,
@@ -15625,7 +15635,7 @@
 /obj/disposalpipe/segment/mail{
 	dir = 4
 	},
-/turf/simulated/floor/airless/grasslush/thin,
+/turf/simulated/floor/grasslush/thin,
 /area/space)
 "odE" = (
 /turf/simulated/floor/carpet{
@@ -16301,7 +16311,7 @@
 /area/space)
 "oJT" = (
 /obj/disposalpipe/segment/mail,
-/turf/simulated/floor/airless/grasslush/thinner,
+/turf/simulated/floor/grasslush/thinner,
 /area/space)
 "oKb" = (
 /mob/living/critter/small_animal/bee/ascbee,
@@ -17165,7 +17175,7 @@
 /turf/simulated/floor/specialroom/cafeteria,
 /area/space)
 "pAY" = (
-/turf/simulated/floor/airless/grasslush/thin,
+/turf/simulated/floor/grasslush/thin,
 /area/space)
 "pAZ" = (
 /obj/disposalpipe/segment/transport{
@@ -17266,7 +17276,7 @@
 	dir = 4;
 	level = -1
 	},
-/turf/simulated/floor/airless/grasslush,
+/turf/simulated/floor/grasslush,
 /area/space)
 "pFQ" = (
 /obj/table/reinforced/auto,
@@ -17658,7 +17668,7 @@
 /obj/shrub{
 	dir = 10
 	},
-/turf/simulated/floor/airless/grasslush/thinner,
+/turf/simulated/floor/grasslush/thinner,
 /area/space)
 "pXU" = (
 /obj/decal/cleanable/cobweb{
@@ -19578,7 +19588,7 @@
 	dir = 4;
 	level = -1
 	},
-/turf/simulated/floor/airless/grasslush/thinner,
+/turf/simulated/floor/grasslush/thinner,
 /area/space)
 "rGt" = (
 /obj/cabinet/chemistry,
@@ -19937,7 +19947,7 @@
 /area/station/turret_protected/armory_outside)
 "sah" = (
 /obj/machinery/mass_driver{
-	drive_range = 23;
+	drive_range = 70;
 	id = "sec_in"
 	},
 /turf/simulated/floor/plating/jen,
@@ -21013,7 +21023,7 @@
 	dir = 4;
 	pixel_y = 32
 	},
-/turf/simulated/floor/airless/grasslush/thinner,
+/turf/simulated/floor/grasslush/thinner,
 /area/space)
 "sXQ" = (
 /obj/reagent_dispensers/foamtank,
@@ -21157,7 +21167,7 @@
 /turf/simulated/floor/blue,
 /area/space)
 "tfp" = (
-/turf/simulated/floor/airless/grasslush,
+/turf/simulated/floor/grasslush,
 /area/space)
 "tfF" = (
 /obj/disposalpipe/segment/ejection{
@@ -21521,6 +21531,8 @@
 	pixel_x = -1;
 	pixel_y = 4
 	},
+/obj/item/spacecash/five,
+/obj/item/coin,
 /turf/simulated/floor/carpet{
 	icon_state = "fred1";
 	dir = 2
@@ -22372,7 +22384,7 @@
 	dir = 2;
 	icon_state = "pipe-c"
 	},
-/turf/simulated/floor/airless/grasslush,
+/turf/simulated/floor/grasslush,
 /area/space)
 "ulV" = (
 /obj/shrub,
@@ -22613,7 +22625,7 @@
 	dir = 1;
 	interesting = "There are traces of styptic powder and adhesive residue on some of the leaves."
 	},
-/turf/simulated/floor/airless/grasslush/thinner,
+/turf/simulated/floor/grasslush/thinner,
 /area/space)
 "uvy" = (
 /obj/submachine/chef_sink/chem_sink{
@@ -23980,7 +23992,7 @@
 /area/space)
 "vNM" = (
 /obj/disposalpipe/segment/mail,
-/turf/simulated/floor/airless/grasslush,
+/turf/simulated/floor/grasslush,
 /area/space)
 "vNS" = (
 /obj/machinery/vending/cigarette,
@@ -24109,10 +24121,6 @@
 	dir = 8;
 	name = "Engine Output Monitoring"
 	},
-/turf/simulated/floor/plating/jen,
-/area/space)
-"vTE" = (
-/obj/machinery/conveyor/south,
 /turf/simulated/floor/plating/jen,
 /area/space)
 "vUb" = (
@@ -25891,9 +25899,8 @@
 "xlF" = (
 /obj/machinery/mass_driver{
 	dir = 4;
-	drive_range = 70;
-	id = "chapel_relayE";
-	name = "cargo driver"
+	drive_range = 25;
+	id = "north_ext"
 	},
 /turf/simulated/floor/plating/jen,
 /area/space)
@@ -66102,13 +66109,13 @@ diZ
 diZ
 qCM
 cZP
-nUR
-nUR
+ntE
+ntE
 qCM
 cZP
-nUR
-nUR
-nUR
+ntE
+ntE
+ntE
 diZ
 diZ
 diZ
@@ -66405,9 +66412,9 @@ diZ
 qCM
 jvE
 qCM
-fFk
-nUR
-nUR
+omz
+ntE
+ntE
 qCM
 wvM
 wvM
@@ -66422,7 +66429,7 @@ wvM
 wvM
 eFC
 eFC
-eFC
+jlM
 omz
 eHN
 plO
@@ -69423,7 +69430,7 @@ diZ
 diZ
 diZ
 qCM
-vTE
+uaz
 cLi
 cCu
 dIH
@@ -72782,7 +72789,7 @@ eFC
 eFC
 eFC
 eFC
-fsU
+qbF
 hjS
 tDu
 odP
@@ -73122,8 +73129,8 @@ mxi
 kbJ
 lPm
 lPm
-wOv
 bFO
+wOv
 oRc
 lPm
 lPm
@@ -86336,7 +86343,7 @@ diZ
 diZ
 qWk
 qCM
-vTE
+uaz
 cCu
 sah
 sah
