@@ -8994,8 +8994,6 @@
 /area/station/quartermaster/office)
 "eHW" = (
 /obj/cable{
-	d1 = 2;
-	d2 = 8;
 	icon_state = "2-8"
 	},
 /obj/cable{
@@ -10098,6 +10096,18 @@
 	},
 /turf/simulated/floor/sanitary/blue,
 /area/station/medical/morgue)
+"fou" = (
+/obj/decal/tile_edge/stripe/extra_big{
+	dir = 1
+	},
+/obj/cable{
+	icon_state = "4-8"
+	},
+/obj/cable{
+	icon_state = "2-8"
+	},
+/turf/simulated/floor/black,
+/area/station/engine/engineering)
 "foL" = (
 /obj/stool/chair/comfy{
 	dir = 1
@@ -18399,8 +18409,6 @@
 	dir = 1
 	},
 /obj/cable{
-	d1 = 1;
-	d2 = 8;
 	icon_state = "1-8"
 	},
 /turf/simulated/floor/black,
@@ -24326,8 +24334,6 @@
 /area/space)
 "ndx" = (
 /obj/cable{
-	d1 = 2;
-	d2 = 4;
 	icon_state = "2-4"
 	},
 /turf/simulated/floor/plating/jen,
@@ -26520,8 +26526,10 @@
 "ogO" = (
 /obj/machinery/power/smes,
 /obj/cable{
-	d2 = 8;
 	icon_state = "0-8"
+	},
+/obj/cable{
+	icon_state = "0-4"
 	},
 /turf/simulated/floor/plating/jen,
 /area/station/engine/engineering)
@@ -27613,8 +27621,6 @@
 	dir = 1
 	},
 /obj/cable{
-	d1 = 1;
-	d2 = 8;
 	icon_state = "1-8"
 	},
 /turf/simulated/floor/engine,
@@ -31923,8 +31929,10 @@
 "rcp" = (
 /obj/machinery/power/smes,
 /obj/cable{
-	d2 = 4;
 	icon_state = "0-4"
+	},
+/obj/cable{
+	icon_state = "0-8"
 	},
 /turf/simulated/floor/plating/jen,
 /area/station/engine/engineering)
@@ -32709,8 +32717,6 @@
 /area/station/hallway/primary/west)
 "rxb" = (
 /obj/cable{
-	d1 = 2;
-	d2 = 4;
 	icon_state = "2-4"
 	},
 /obj/cable{
@@ -36863,6 +36869,12 @@
 	icon_state = "L15"
 	},
 /area/station/hallway/secondary/exit)
+"tID" = (
+/obj/cable{
+	icon_state = "2-8"
+	},
+/turf/simulated/floor/black,
+/area/station/engine/engineering)
 "tIK" = (
 /obj/wingrille_spawn/auto/crystal/reinforced,
 /obj/window_blinds/cog2/middle{
@@ -40726,8 +40738,6 @@
 /area/station/science/lobby)
 "vPq" = (
 /obj/cable{
-	d1 = 2;
-	d2 = 8;
 	icon_state = "2-8"
 	},
 /turf/simulated/floor/plating/jen,
@@ -42292,16 +42302,10 @@
 	dir = 1
 	},
 /obj/cable{
-	d2 = 4;
 	icon_state = "0-4"
 	},
 /obj/cable{
-	d2 = 8;
 	icon_state = "0-8"
-	},
-/obj/cable{
-	d2 = 2;
-	icon_state = "0-2"
 	},
 /turf/simulated/floor/black,
 /area/station/engine/engineering)
@@ -43996,15 +44000,10 @@
 /obj/decal/tile_edge/stripe/extra_big{
 	dir = 1
 	},
+/obj/cable{
+	icon_state = "4-8"
+	},
 /obj/cable,
-/obj/cable{
-	d2 = 4;
-	icon_state = "0-4"
-	},
-/obj/cable{
-	d2 = 8;
-	icon_state = "0-8"
-	},
 /turf/simulated/floor/black,
 /area/station/engine/engineering)
 "xrf" = (
@@ -44173,6 +44172,9 @@
 "xvv" = (
 /obj/machinery/power/terminal{
 	dir = 4
+	},
+/obj/cable{
+	icon_state = "0-4"
 	},
 /turf/simulated/floor/plating/jen,
 /area/station/engine/engineering)
@@ -45131,6 +45133,9 @@
 "xUG" = (
 /obj/machinery/power/terminal{
 	dir = 8
+	},
+/obj/cable{
+	icon_state = "0-8"
 	},
 /turf/simulated/floor/plating/jen,
 /area/station/engine/engineering)
@@ -85183,8 +85188,8 @@ xUc
 xvv
 vQQ
 xvv
-cag
-wFO
+fou
+kKo
 hSz
 gRv
 gRv
@@ -85486,7 +85491,7 @@ rcp
 vTz
 rcp
 wBF
-eUC
+tID
 jpY
 tzq
 tzq
