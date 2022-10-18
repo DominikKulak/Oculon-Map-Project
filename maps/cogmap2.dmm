@@ -2761,7 +2761,7 @@
 	icon_state = "0-4"
 	},
 /turf/simulated/floor/plating,
-/area/station/turret_protected/ai)
+/area/station/turret_protected/AIbaseoutside)
 "bjF" = (
 /obj/cable{
 	icon_state = "4-8"
@@ -8256,7 +8256,7 @@
 	icon_state = "0-4"
 	},
 /turf/simulated/floor/plating,
-/area/station/turret_protected/ai)
+/area/station/turret_protected/AIbaseoutside)
 "dAh" = (
 /obj/item/instrument/large/jukebox,
 /obj/disposalpipe/segment{
@@ -9134,6 +9134,7 @@
 /area/station/hangar/science)
 "dUr" = (
 /obj/stool/chair/wooden,
+/mob/living/critter/small_animal/bee/creepy,
 /turf/simulated/floor/carpet{
 	icon_state = "green1"
 	},
@@ -9365,7 +9366,7 @@
 /area/station/hangar/qm)
 "dYI" = (
 /turf/simulated/wall/auto/reinforced/jen,
-/area/station/turret_protected/ai)
+/area/station/turret_protected/AIbaseoutside)
 "dZb" = (
 /obj/cable{
 	icon_state = "2-4"
@@ -10226,6 +10227,9 @@
 /turf/simulated/floor/dojo/sand/horizontal,
 /area/station/chapel/sanctuary)
 "etl" = (
+/obj/cable{
+	icon_state = "1-8"
+	},
 /turf/simulated/floor/shuttlebay{
 	name = "reinforced plating"
 	},
@@ -13792,7 +13796,6 @@
 /turf/simulated/floor/specialroom/medbay,
 /area/station/medical/medbay/pharmacy)
 "ger" = (
-/mob/living/critter/small_animal/bee/creepy,
 /obj/decal/tile_edge/line/black{
 	dir = 1;
 	icon_state = "line1";
@@ -18172,6 +18175,9 @@
 /obj/disposalpipe/segment/mail{
 	dir = 4
 	},
+/obj/cable{
+	icon_state = "1-2"
+	},
 /turf/simulated/floor/black,
 /area/station/science/teleporter)
 "icX" = (
@@ -18260,6 +18266,9 @@
 	},
 /obj/cable{
 	icon_state = "1-8"
+	},
+/obj/cable{
+	icon_state = "1-4"
 	},
 /turf/simulated/floor/purpleblack{
 	dir = 1
@@ -18531,6 +18540,22 @@
 /obj/decal/cleanable/dirt/jen,
 /turf/simulated/floor/plating/jen,
 /area/station/maintenance/outer/nw)
+"ilV" = (
+/obj/decal/tile_edge/line/purple{
+	dir = 1;
+	icon_state = "line1"
+	},
+/obj/disposalpipe/segment{
+	dir = 4;
+	level = -1
+	},
+/obj/cable{
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/shuttlebay{
+	name = "reinforced plating"
+	},
+/area/station/science/teleporter)
 "ime" = (
 /obj/item/reagent_containers/food/snacks/burger/moldy,
 /obj/table/reinforced/auto,
@@ -21603,10 +21628,13 @@
 "jBE" = (
 /obj/decal/cleanable/dirt/jen,
 /obj/critter/townguard,
+/obj/cable{
+	icon_state = "0-2"
+	},
 /turf/simulated/floor/shuttlebay{
 	name = "reinforced plating"
 	},
-/area/station/turret_protected/ai)
+/area/station/turret_protected/AIbaseoutside)
 "jBL" = (
 /obj/table/wood/auto,
 /turf/simulated/floor/wood,
@@ -21851,7 +21879,7 @@
 	icon_state = "0-2"
 	},
 /turf/simulated/floor/plating,
-/area/station/turret_protected/ai)
+/area/station/turret_protected/AIbaseoutside)
 "jIj" = (
 /turf/simulated/floor/twotone/green,
 /area/station/crew_quarters/arcade)
@@ -27286,8 +27314,14 @@
 "lZs" = (
 /obj/wingrille_spawn/auto/reinforced,
 /obj/cable,
+/obj/machinery/networked/secdetector{
+	area_access = 99;
+	detector_id = "AI Core";
+	dir = 1
+	},
+/obj/machinery/power/data_terminal,
 /turf/simulated/floor/plating,
-/area/station/turret_protected/ai)
+/area/station/turret_protected/AIbaseoutside)
 "lZB" = (
 /obj/cable{
 	icon_state = "1-2"
@@ -27726,7 +27760,7 @@
 	},
 /obj/cable,
 /turf/simulated/floor/plating,
-/area/station/turret_protected/ai)
+/area/station/turret_protected/AIbaseoutside)
 "mkO" = (
 /obj/cable{
 	icon_state = "1-2"
@@ -28448,7 +28482,7 @@
 /turf/simulated/floor/shuttlebay{
 	name = "reinforced plating"
 	},
-/area/station/turret_protected/ai)
+/area/station/turret_protected/AIbaseoutside)
 "mBc" = (
 /obj/disposalpipe/segment,
 /turf/simulated/floor/blue/side{
@@ -29105,7 +29139,7 @@
 	icon_state = "0-2"
 	},
 /turf/simulated/floor/plating,
-/area/station/turret_protected/ai)
+/area/station/turret_protected/AIbaseoutside)
 "mPo" = (
 /obj/storage/crate/bin,
 /obj/blind_switch/north,
@@ -37756,6 +37790,14 @@
 /obj/machinery/space_heater,
 /turf/simulated/floor/plating/jen,
 /area/station/maintenance/outer/ne)
+"qym" = (
+/obj/cable{
+	icon_state = "2-8"
+	},
+/turf/simulated/floor/purpleblack{
+	dir = 1
+	},
+/area/station/science/teleporter)
 "qyA" = (
 /obj/disposalpipe/segment/mail{
 	dir = 4
@@ -39569,7 +39611,7 @@
 "rpU" = (
 /obj/disposalpipe/segment,
 /turf/simulated/wall/auto/reinforced/jen,
-/area/station/turret_protected/ai)
+/area/station/turret_protected/AIbaseoutside)
 "rqm" = (
 /obj/grille/catwalk/jen/side{
 	dir = 4
@@ -40997,11 +41039,6 @@
 	dir = 4
 	},
 /area/station/engine/elect)
-"rWZ" = (
-/obj/machinery/door/airlock/pyro/glass,
-/obj/access_spawn/research,
-/turf/simulated/floor/delivery,
-/area/station/science/teleporter)
 "rXf" = (
 /obj/access_spawn/rancher,
 /obj/machinery/door/window/northright,
@@ -41377,8 +41414,14 @@
 	d2 = 4;
 	icon_state = "0-4"
 	},
+/obj/machinery/networked/secdetector{
+	area_access = 99;
+	detector_id = "AI Core";
+	dir = 4
+	},
+/obj/machinery/power/data_terminal,
 /turf/simulated/floor/plating,
-/area/station/turret_protected/ai)
+/area/station/turret_protected/AIbaseoutside)
 "sey" = (
 /obj/decal/fakeobjects{
 	desc = "Under construction";
@@ -43146,6 +43189,14 @@
 /obj/decal/cleanable/dirt/jen,
 /turf/simulated/floor/plating/jen,
 /area/station/maintenance/disposal)
+"sRE" = (
+/obj/machinery/power/apc/autoname_south,
+/obj/wingrille_spawn/auto/reinforced,
+/obj/cable{
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/plating,
+/area/station/turret_protected/AIbaseoutside)
 "sSb" = (
 /obj/storage/closet/emergency,
 /obj/decal/cleanable/dirt/jen,
@@ -44754,8 +44805,14 @@
 	d2 = 8;
 	icon_state = "0-8"
 	},
+/obj/machinery/networked/secdetector{
+	area_access = 99;
+	detector_id = "AI Core";
+	dir = 8
+	},
+/obj/machinery/power/data_terminal,
 /turf/simulated/floor/plating,
-/area/station/turret_protected/ai)
+/area/station/turret_protected/AIbaseoutside)
 "tDi" = (
 /obj/disposalpipe/switch_junction/right/east{
 	mail_tag = "refinery"
@@ -46564,7 +46621,7 @@
 /turf/simulated/floor/shuttlebay{
 	name = "reinforced plating"
 	},
-/area/station/turret_protected/ai)
+/area/station/turret_protected/AIbaseoutside)
 "utJ" = (
 /obj/cable{
 	icon_state = "1-4"
@@ -47093,8 +47150,13 @@
 /obj/cable{
 	icon_state = "0-2"
 	},
+/obj/machinery/networked/secdetector{
+	area_access = 99;
+	detector_id = "AI Core"
+	},
+/obj/machinery/power/data_terminal,
 /turf/simulated/floor/plating,
-/area/station/turret_protected/ai)
+/area/station/turret_protected/AIbaseoutside)
 "uFE" = (
 /turf/simulated/floor/black,
 /area/station/crew_quarters/supplylobby)
@@ -48144,6 +48206,9 @@
 /turf/simulated/floor/black,
 /area/station/crewquarters/cryotron)
 "vcb" = (
+/obj/cable{
+	icon_state = "4-8"
+	},
 /turf/simulated/floor/purpleblack{
 	dir = 1
 	},
@@ -51817,6 +51882,9 @@
 "wFO" = (
 /turf/simulated/floor/black,
 /area/station/engine/engineering)
+"wFU" = (
+/turf/simulated/wall/auto/reinforced/jen/blue,
+/area/station/turret_protected/AIbaseoutside)
 "wGd" = (
 /obj/wingrille_spawn/auto/reinforced,
 /turf/simulated/floor/plating,
@@ -52778,6 +52846,10 @@
 /area/station/quartermaster/refinery)
 "xaN" = (
 /obj/machinery/networked/telepad,
+/obj/machinery/power/data_terminal,
+/obj/cable{
+	icon_state = "0-4"
+	},
 /turf/simulated/floor/shuttlebay{
 	name = "reinforced plating"
 	},
@@ -53272,6 +53344,10 @@
 	},
 /turf/simulated/floor/black/grime,
 /area/station/crew_quarters/quartersA)
+"xlq" = (
+/obj/wingrille_spawn/auto/reinforced,
+/turf/simulated/floor/plating,
+/area/station/turret_protected/AIbaseoutside)
 "xlx" = (
 /obj/critter/domestic_bee/buddy,
 /turf/simulated/floor,
@@ -53676,7 +53752,7 @@
 /turf/simulated/floor/shuttlebay{
 	name = "reinforced plating"
 	},
-/area/station/turret_protected/ai)
+/area/station/turret_protected/AIbaseoutside)
 "xtx" = (
 /obj/decal/tile_edge/stripe/extra_big,
 /turf/simulated/floor/black,
@@ -88871,10 +88947,10 @@ tae
 aZb
 sYk
 sYk
-vcb
+qym
 icW
-rWZ
-sFR
+aZL
+ilV
 etl
 fMS
 jEJ
@@ -101254,17 +101330,17 @@ sko
 lPp
 dYI
 dYI
-nBB
-nBB
-nBB
-nBB
-nBB
-nBB
-nBB
-nBB
-nBB
-nBB
-nBB
+wFU
+wFU
+wFU
+wFU
+wFU
+xlq
+wFU
+wFU
+wFU
+wFU
+wFU
 dYI
 umy
 khD
@@ -101555,8 +101631,8 @@ nLZ
 sko
 dYI
 dYI
-nBB
-nBB
+wFU
+wFU
 uFq
 bjv
 jIh
@@ -101566,8 +101642,8 @@ jIh
 jIh
 jIh
 lZs
-nBB
-nBB
+wFU
+wFU
 umy
 wmE
 ofe
@@ -101857,7 +101933,7 @@ nLZ
 upa
 dYI
 utz
-nBB
+wFU
 seo
 cQe
 ocA
@@ -101869,7 +101945,7 @@ umC
 umC
 kbJ
 seo
-nBB
+wFU
 kMz
 wmE
 tFE
@@ -102159,7 +102235,7 @@ lpo
 pfW
 dYI
 utz
-nBB
+wFU
 dzJ
 aqD
 rGN
@@ -102171,7 +102247,7 @@ yeL
 oDX
 rcd
 dzJ
-nBB
+wFU
 kMz
 diZ
 wmE
@@ -102461,7 +102537,7 @@ gBG
 dcr
 dYI
 utz
-nBB
+wFU
 dzJ
 aqD
 mug
@@ -102473,7 +102549,7 @@ lMk
 vtw
 rcd
 dzJ
-nBB
+wFU
 kMz
 diZ
 wmE
@@ -102763,7 +102839,7 @@ nAS
 pNJ
 dYI
 utz
-nBB
+wFU
 dzJ
 fwD
 mdx
@@ -102775,7 +102851,7 @@ vFX
 vtw
 rcd
 dzJ
-nBB
+wFU
 ruz
 gEb
 uOS
@@ -103065,8 +103141,8 @@ tAX
 rOB
 dYI
 jBE
-nBB
-dzJ
+sRE
+mkB
 oTQ
 ger
 wkO
@@ -103077,7 +103153,7 @@ nen
 wkO
 jdh
 dzJ
-nBB
+wFU
 diZ
 wmE
 wmE
@@ -103367,7 +103443,7 @@ tAX
 rOB
 dYI
 utz
-nBB
+wFU
 dzJ
 tfl
 uaS
@@ -103379,7 +103455,7 @@ vFX
 vtw
 rcd
 dzJ
-nBB
+wFU
 diZ
 wmE
 imF
@@ -103669,7 +103745,7 @@ mQU
 rOB
 dYI
 utz
-nBB
+wFU
 dzJ
 aqD
 mug
@@ -103681,7 +103757,7 @@ jad
 vtw
 rcd
 dzJ
-nBB
+wFU
 diZ
 cmj
 fIE
@@ -103971,7 +104047,7 @@ tAX
 rOB
 dYI
 utz
-nBB
+wFU
 mOQ
 xhL
 mnk
@@ -103983,7 +104059,7 @@ dIA
 lvL
 lfe
 mkB
-nBB
+wFU
 diZ
 wmE
 vsP
@@ -104273,19 +104349,19 @@ tAX
 rOB
 dYI
 utz
-nBB
+wFU
 tDa
 kPI
 tda
-tda
 wuT
+tda
 kYU
 tda
 tda
 tda
 naf
 tDa
-nBB
+wFU
 diZ
 wmE
 bXB
@@ -104575,19 +104651,19 @@ tAX
 rOB
 dYI
 dYI
-nBB
-nBB
+wFU
+wFU
 nBB
 nBB
 nBB
 nBB
 bPr
 nBB
-nBB
-nBB
-nBB
-nBB
-nBB
+wFU
+wFU
+wFU
+wFU
+wFU
 diZ
 wmE
 imF
