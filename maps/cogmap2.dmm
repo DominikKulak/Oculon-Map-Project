@@ -5011,6 +5011,10 @@
 /obj/cable{
 	icon_state = "0-2"
 	},
+/obj/machinery/light{
+	dir = 1;
+	pixel_y = 21
+	},
 /turf/simulated/floor/twotone/purple,
 /area/station/science/lab)
 "bWG" = (
@@ -6409,6 +6413,7 @@
 "czB" = (
 /obj/table/auto,
 /obj/item/storage/firstaid,
+/obj/machinery/light,
 /turf/simulated/floor/white,
 /area/station/science/artifact)
 "czI" = (
@@ -7803,6 +7808,10 @@
 /obj/machinery/atmospherics/pipe/simple/heat_exchanging{
 	dir = 6
 	},
+/obj/machinery/light{
+	dir = 1;
+	pixel_y = 21
+	},
 /turf/simulated/floor/engine/vacuum,
 /area/station/science/lab)
 "dcm" = (
@@ -7964,6 +7973,17 @@
 	icon_state = "red2"
 	},
 /area/station/crew_quarters/fitness)
+"dfH" = (
+/obj/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/simulated/floor/twotone/purple,
+/area/station/routing/medsci{
+	name = "Research Router"
+	})
 "dfK" = (
 /obj/cable{
 	icon_state = "1-2"
@@ -8218,10 +8238,6 @@
 "dlq" = (
 /obj/cable{
 	icon_state = "4-8"
-	},
-/obj/machinery/light{
-	dir = 1;
-	pixel_y = 21
 	},
 /turf/simulated/floor/shuttlebay,
 /area/station/hangar/science)
@@ -9749,6 +9765,10 @@
 	},
 /obj/cable{
 	icon_state = "4-8"
+	},
+/obj/machinery/light{
+	dir = 1;
+	pixel_y = 21
 	},
 /turf/simulated/floor/specialroom/arcade,
 /area/station/hangar/science)
@@ -11509,6 +11529,15 @@
 "eCF" = (
 /turf/simulated/wall/auto/reinforced/supernorn/blackred,
 /area/station/security/main)
+"eCR" = (
+/obj/machinery/light{
+	dir = 4;
+	pixel_x = 10
+	},
+/turf/simulated/floor/black,
+/area/station/routing/medsci{
+	name = "Research Router"
+	})
 "eDa" = (
 /obj/cable{
 	icon_state = "4-8"
@@ -12869,9 +12898,6 @@
 /obj/reagent_dispensers/watertank/fountain,
 /turf/unsimulated/floor/grime,
 /area/station/medical/asylum/main)
-"fhQ" = (
-/turf/simulated/floor/blue,
-/area/station/routing/medsci)
 "fik" = (
 /turf/simulated/floor/yellow/corner{
 	dir = 4
@@ -13591,6 +13617,9 @@
 /obj/storage/closet/emergency,
 /obj/item/tank/air,
 /obj/item/device/light/flashlight,
+/obj/machinery/light{
+	dir = 8
+	},
 /turf/simulated/floor/plating,
 /area/station/hangar/science)
 "fAx" = (
@@ -14282,6 +14311,7 @@
 	dir = 1
 	},
 /obj/machinery/portable_atmospherics/canister/air,
+/obj/machinery/light,
 /turf/simulated/floor/specialroom/arcade,
 /area/station/hangar/science)
 "fSn" = (
@@ -18266,6 +18296,10 @@
 /obj/item/device/radio/intercom/security{
 	dir = 8
 	},
+/obj/machinery/light{
+	dir = 1;
+	pixel_y = 21
+	},
 /turf/simulated/floor/wood/two,
 /area/station/security/detectives_office)
 "hDG" = (
@@ -18603,6 +18637,10 @@
 /area/station/maintenance/inner/west)
 "hJW" = (
 /obj/machinery/chem_master,
+/obj/machinery/light{
+	dir = 4;
+	pixel_x = 10
+	},
 /turf/simulated/floor/purplewhite{
 	dir = 5
 	},
@@ -18973,6 +19011,13 @@
 	},
 /turf/simulated/floor,
 /area/station/mining/staff_room)
+"hRH" = (
+/obj/machinery/light{
+	dir = 1;
+	pixel_y = 21
+	},
+/turf/simulated/floor/white,
+/area/station/science/artifact)
 "hRJ" = (
 /obj/machinery/conveyor{
 	dir = 4;
@@ -23893,6 +23938,10 @@
 	})
 "jRH" = (
 /obj/item/shipcomponent/secondary_system/cargo,
+/obj/machinery/light{
+	dir = 1;
+	pixel_y = 21
+	},
 /turf/simulated/floor/shuttlebay,
 /area/station/hangar/science)
 "jRS" = (
@@ -28383,6 +28432,10 @@
 /obj/machinery/computer/ordercomp{
 	dir = 8
 	},
+/obj/machinery/light{
+	dir = 4;
+	pixel_x = 10
+	},
 /turf/simulated/floor/purple,
 /area/station/routing/medsci)
 "lIc" = (
@@ -28944,6 +28997,9 @@
 "lSa" = (
 /obj/storage/closet/fire,
 /obj/item/extinguisher,
+/obj/machinery/light{
+	dir = 8
+	},
 /turf/simulated/floor/black,
 /area/station/engine/hotloop)
 "lSd" = (
@@ -31207,6 +31263,10 @@
 	dir = 8;
 	pixel_x = -4
 	},
+/obj/machinery/light{
+	dir = 1;
+	pixel_y = 21
+	},
 /turf/simulated/floor/sanitary/white,
 /area/station/science/restroom)
 "mQp" = (
@@ -31935,6 +31995,9 @@
 /obj/machinery/power/data_terminal,
 /obj/cable{
 	icon_state = "0-4"
+	},
+/obj/machinery/light{
+	dir = 8
 	},
 /turf/simulated/floor/white,
 /area/station/science/artifact)
@@ -36221,6 +36284,7 @@
 	pixel_x = -4
 	},
 /obj/disposalpipe/segment,
+/obj/machinery/light,
 /turf/simulated/floor/purplewhite{
 	dir = 10
 	},
@@ -37220,6 +37284,14 @@
 	dir = 4
 	},
 /area/mining/magnet)
+"phz" = (
+/obj/machinery/atmospherics/pipe/simple/junction,
+/obj/machinery/light{
+	dir = 1;
+	pixel_y = 21
+	},
+/turf/simulated/floor/engine/vacuum,
+/area/station/science/lab)
 "phH" = (
 /obj/storage/crate/freezer{
 	name = "Freezer"
@@ -44872,6 +44944,13 @@
 	dir = 5
 	},
 /area/station/security/interrogation)
+"sqg" = (
+/obj/machinery/light{
+	dir = 4;
+	pixel_x = 10
+	},
+/turf/simulated/floor/plating,
+/area/station/science/gen_storage)
 "sqj" = (
 /obj/machinery/disposal,
 /obj/disposalpipe/trunk{
@@ -47801,6 +47880,10 @@
 	pixel_y = 8
 	},
 /obj/item/storage/secure/sbriefcase,
+/obj/machinery/light/small{
+	dir = 4;
+	status = 2
+	},
 /turf/simulated/floor/carpet/grime,
 /area/station/security/detectives_office)
 "tzu" = (
@@ -50171,6 +50254,10 @@
 	})
 "uzQ" = (
 /obj/machinery/fluid_canister,
+/obj/machinery/light{
+	dir = 4;
+	pixel_x = 10
+	},
 /turf/simulated/floor/plating,
 /area/station/science/gen_storage)
 "uzW" = (
@@ -59537,6 +59624,10 @@
 /area/station/ai_monitored/armory)
 "yjf" = (
 /obj/storage/secure/closet/research/uniform,
+/obj/machinery/light{
+	dir = 1;
+	pixel_y = 21
+	},
 /turf/simulated/floor/purpleblack{
 	dir = 1
 	},
@@ -82151,7 +82242,7 @@ bPz
 bPz
 gNK
 nLH
-lUl
+phz
 vLe
 nHz
 fob
@@ -85489,7 +85580,7 @@ tje
 tUA
 jYP
 ddD
-fkx
+sqg
 fkx
 wXr
 jYx
@@ -85800,7 +85891,7 @@ gTs
 gTs
 gTs
 gTs
-fDu
+hRH
 fDu
 fDu
 npH
@@ -87891,7 +87982,7 @@ fsP
 jse
 woE
 kRn
-nMC
+dfH
 nMC
 nMC
 dWA
@@ -88190,7 +88281,7 @@ dyt
 iuy
 etv
 fsP
-fsP
+eCR
 woE
 exs
 exs
@@ -93055,7 +93146,7 @@ spa
 sCc
 uSQ
 reY
-fhQ
+bnG
 ciF
 cTq
 klo
