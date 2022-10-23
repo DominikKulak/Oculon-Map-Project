@@ -4016,6 +4016,9 @@
 /turf/simulated/floor/black,
 /area/station/engine/engineering)
 "bzL" = (
+/obj/submachine/ATM{
+	pixel_y = 32
+	},
 /turf/simulated/floor/arrival{
 	dir = 9
 	},
@@ -7575,6 +7578,13 @@
 	},
 /turf/simulated/floor,
 /area/station/hangar/main)
+"cKJ" = (
+/obj/wingrille_spawn/auto/reinforced,
+/obj/cable{
+	icon_state = "0-2"
+	},
+/turf/simulated/floor/plating,
+/area/station/science/artifact)
 "cKP" = (
 /obj/grille/catwalk/jen/side{
 	dir = 6
@@ -16455,6 +16465,15 @@
 /obj/access_spawn/research,
 /obj/decal/mule/dropoff,
 /obj/firedoor_spawn,
+/obj/cable{
+	icon_state = "4-8"
+	},
+/obj/cable{
+	icon_state = "2-8"
+	},
+/obj/cable{
+	icon_state = "1-8"
+	},
 /turf/simulated/floor/delivery,
 /area/station/science/artifact)
 "ggB" = (
@@ -17372,6 +17391,12 @@
 	},
 /turf/simulated/floor/grime,
 /area/station/security/brig/north_side)
+"gAY" = (
+/obj/submachine/ATM{
+	pixel_x = 32
+	},
+/turf/simulated/floor/black,
+/area/station/crew_quarters/supplylobby)
 "gBd" = (
 /obj/decal/cleanable/dirt{
 	dir = 8
@@ -18019,9 +18044,6 @@
 	},
 /area/station/medical/medbay)
 "gNc" = (
-/obj/cable{
-	icon_state = "4-8"
-	},
 /obj/machinery/light{
 	dir = 8;
 	tag = ""
@@ -18322,6 +18344,9 @@
 	icon_state = "0-2"
 	},
 /obj/decal/cleanable/dirt/jen,
+/obj/cable/yellow{
+	icon_state = "2-4"
+	},
 /turf/simulated/floor/plating/jen,
 /area/station/solar/north)
 "gTj" = (
@@ -19656,6 +19681,14 @@
 	dir = 4
 	},
 /area/station/crewquarters/cryotron)
+"htA" = (
+/obj/machinery/networked/test_apparatus/heater,
+/obj/machinery/power/data_terminal,
+/obj/cable{
+	icon_state = "0-8"
+	},
+/turf/simulated/floor/black,
+/area/station/science/artifact)
 "htJ" = (
 /obj/grille/catwalk/jen/side{
 	dir = 1
@@ -25598,6 +25631,12 @@
 	},
 /turf/simulated/floor/wood,
 /area/station/science/restroom)
+"jED" = (
+/obj/cable{
+	icon_state = "2-8"
+	},
+/turf/simulated/floor/black,
+/area/station/science/lobby)
 "jEF" = (
 /obj/stool/chair/red{
 	dir = 8
@@ -33945,6 +33984,12 @@
 	},
 /turf/simulated/floor/plating,
 /area/station/security/brig/north_side)
+"mKW" = (
+/obj/cable{
+	icon_state = "2-4"
+	},
+/turf/simulated/floor/black,
+/area/station/science/artifact)
 "mKX" = (
 /obj/grille/catwalk/jen/side{
 	dir = 5
@@ -38527,6 +38572,14 @@
 /obj/machinery/manufacturer/gas,
 /turf/simulated/floor/black,
 /area/station/engine/coldloop)
+"ooK" = (
+/obj/submachine/ATM{
+	pixel_y = 32
+	},
+/turf/simulated/floor/neutral/side{
+	dir = 1
+	},
+/area/station/hallway/primary/southwest)
 "ooP" = (
 /obj/shrub,
 /obj/machinery/light,
@@ -48745,6 +48798,10 @@
 /obj/cable{
 	icon_state = "4-8"
 	},
+/obj/machinery/light/small{
+	dir = 8;
+	pixel_x = -12
+	},
 /turf/simulated/floor/plating/jen,
 /area/station/maintenance/outer/nw)
 "sjl" = (
@@ -50177,6 +50234,15 @@
 /obj/firedoor_spawn,
 /turf/simulated/floor/black,
 /area/station/crewquarters/cryotron)
+"sJq" = (
+/obj/cable{
+	icon_state = "4-8"
+	},
+/obj/cable{
+	icon_state = "1-8"
+	},
+/turf/simulated/floor/black,
+/area/station/science/artifact)
 "sJx" = (
 /obj/machinery/door/poddoor/blast/single{
 	density = 0;
@@ -54249,6 +54315,15 @@
 	dir = 6
 	},
 /area/station/mining/staff_room)
+"uml" = (
+/obj/disposalpipe/segment/mail,
+/obj/machinery/door_control{
+	id = "speedboost_crusher";
+	name = "Disposals Doors";
+	pixel_x = -24
+	},
+/turf/simulated/floor/grime,
+/area/station/maintenance/disposal)
 "umm" = (
 /obj/pool/perspective{
 	dir = 9;
@@ -54950,8 +55025,9 @@
 /area/station/janitor/office)
 "uxJ" = (
 /obj/wingrille_spawn/auto/reinforced,
+/obj/cable,
 /obj/cable{
-	icon_state = "4-8"
+	icon_state = "0-2"
 	},
 /turf/simulated/floor/plating,
 /area/station/science/artifact)
@@ -56499,6 +56575,11 @@
 /obj/disposalpipe/segment/mail,
 /turf/simulated/floor,
 /area/station/crew_quarters/quarters_west)
+"vbG" = (
+/obj/wingrille_spawn/auto/reinforced,
+/obj/cable,
+/turf/simulated/floor/plating,
+/area/station/science/artifact)
 "vbJ" = (
 /obj/storage/closet/wardrobe/pride,
 /turf/simulated/floor/black,
@@ -58952,6 +59033,12 @@
 /obj/effects/background_objects/station/ss12,
 /turf/space,
 /area/space)
+"wal" = (
+/obj/cable{
+	icon_state = "1-4"
+	},
+/turf/simulated/floor/black,
+/area/station/science/lobby)
 "wam" = (
 /obj/disposalpipe/segment/mail{
 	dir = 4
@@ -64050,6 +64137,14 @@
 /obj/grille/steel,
 /turf/space,
 /area/space)
+"xMW" = (
+/obj/submachine/ATM{
+	pixel_x = 32
+	},
+/turf/simulated/floor/green/side{
+	dir = 4
+	},
+/area/station/bridge/customs)
 "xMY" = (
 /obj/disposalpipe/segment/produce{
 	dir = 4
@@ -92651,8 +92746,8 @@ ddD
 gTs
 tyG
 mGX
-mGX
-tyG
+mKW
+sJq
 mGX
 tyG
 mGX
@@ -92953,8 +93048,8 @@ ddD
 gTs
 qHd
 mGX
-mGX
 tyG
+htA
 mGX
 bmQ
 gTs
@@ -93254,10 +93349,10 @@ kgT
 ddD
 gTs
 gTs
-nBV
+cKJ
 ggz
 uxJ
-nBV
+vbG
 gTs
 gTs
 obL
@@ -93557,7 +93652,7 @@ ddD
 kgT
 xip
 uRu
-uRu
+mWe
 gNc
 uRu
 uRu
@@ -93859,8 +93954,8 @@ ddD
 rau
 yjf
 euW
-euW
-jAE
+jED
+wal
 euW
 euW
 euW
@@ -96015,7 +96110,7 @@ sOl
 sOl
 sOl
 sOl
-tfu
+ooK
 qXj
 oFS
 ruS
@@ -110114,7 +110209,7 @@ szW
 ikF
 ikF
 gPa
-uFE
+gAY
 uFE
 uFE
 uFE
@@ -115311,7 +115406,7 @@ hft
 gOC
 sjb
 jYp
-ujx
+uml
 ujx
 cwX
 nhe
@@ -120406,7 +120501,7 @@ qFY
 nNp
 nNp
 oUB
-wRE
+xMW
 aNu
 viA
 tWu
@@ -124635,7 +124730,7 @@ dtN
 dtN
 dtN
 dtN
-dtN
+hFr
 hFr
 hFr
 hqG
