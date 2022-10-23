@@ -57036,10 +57036,10 @@
 /area/station/bridge/customs)
 "viG" = (
 /obj/cable{
-	icon_state = "2-8"
+	icon_state = "1-2"
 	},
 /obj/cable{
-	icon_state = "1-2"
+	icon_state = "2-8"
 	},
 /turf/simulated/floor/circuit/green,
 /area/station/turret_protected/Zeta)
