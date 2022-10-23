@@ -6916,6 +6916,19 @@
 /obj/landmark/artifact,
 /turf/simulated/floor/black,
 /area/station/science/artifact)
+"czk" = (
+/obj/disposalpipe/segment,
+/obj/machinery/atmospherics/pipe/simple{
+	level = 2
+	},
+/obj/blind_switch/area{
+	pixel_x = -24;
+	pixel_y = -2
+	},
+/turf/simulated/floor/shuttlebay{
+	name = "reinforced plating"
+	},
+/area/station/science/testchamber)
 "czq" = (
 /obj/decal/fakeobjects{
 	anchored = 1;
@@ -9628,6 +9641,10 @@
 	name = "cat bed"
 	},
 /obj/critter/cat/jones,
+/obj/blind_switch/area{
+	pixel_x = -24;
+	pixel_y = -2
+	},
 /turf/simulated/floor/carpet/green/fancy/edge{
 	dir = 9
 	},
@@ -26257,6 +26274,10 @@
 /obj/decal/cleanable/cobweb{
 	icon_state = "cobweb2"
 	},
+/obj/machinery/light/small{
+	dir = 4;
+	pixel_x = 10
+	},
 /turf/simulated/floor/wood{
 	icon_state = "wooden"
 	},
@@ -33718,10 +33739,6 @@
 "mKA" = (
 /obj/decal/fakeobjects/creepytv,
 /obj/decal/cleanable/dirt/dirt3,
-/obj/machinery/light{
-	dir = 1;
-	pixel_y = 21
-	},
 /turf/simulated/floor/wood{
 	icon_state = "wooden"
 	},
@@ -33972,6 +33989,10 @@
 "mPo" = (
 /obj/storage/crate/bin,
 /obj/item/reagent_containers/food/drinks/bottle/bojackson,
+/obj/blind_switch/area{
+	pixel_x = -24;
+	pixel_y = -2
+	},
 /turf/simulated/floor/carpet/grime,
 /area/station/security/detectives_office)
 "mPp" = (
@@ -42226,7 +42247,7 @@
 	pixel_x = 11;
 	pixel_y = 5
 	},
-/obj/machinery/light{
+/obj/machinery/light/small{
 	dir = 4;
 	pixel_x = 10
 	},
@@ -43648,6 +43669,10 @@
 "qsJ" = (
 /obj/cable{
 	icon_state = "1-2"
+	},
+/obj/blind_switch/area{
+	pixel_x = -24;
+	pixel_y = -2
 	},
 /turf/simulated/floor/sanitary,
 /area/station/crew_quarters/locker)
@@ -48506,6 +48531,10 @@
 /area/station/maintenance/inner/nw)
 "skq" = (
 /obj/storage/closet/biohazard,
+/obj/blind_switch/area{
+	pixel_x = -24;
+	pixel_y = -2
+	},
 /turf/simulated/floor/black,
 /area/station/crew_quarters/hor)
 "skr" = (
@@ -51839,6 +51868,10 @@
 	pixel_x = 8;
 	pixel_y = 10
 	},
+/obj/blind_switch/area{
+	pixel_x = -24;
+	pixel_y = -2
+	},
 /turf/simulated/floor/black,
 /area/station/engine/hotloop)
 "tul" = (
@@ -51960,6 +51993,10 @@
 /turf/simulated/floor,
 /area/station/hallway/primary/west)
 "txy" = (
+/obj/blind_switch/area{
+	pixel_x = -24;
+	pixel_y = -2
+	},
 /turf/simulated/floor/carpet{
 	dir = 10;
 	icon_state = "fred2"
@@ -58285,6 +58322,10 @@
 	icon_state = "0-4"
 	},
 /obj/machinery/power/data_terminal,
+/obj/blind_switch/area{
+	pixel_x = -24;
+	pixel_y = -2
+	},
 /turf/simulated/floor/carpet/arcade,
 /area/station/crew_quarters/captain)
 "vWh" = (
@@ -59987,6 +60028,9 @@
 /obj/machinery/light{
 	dir = 4;
 	pixel_x = 10
+	},
+/obj/blind_switch/area{
+	pixel_y = -24
 	},
 /turf/simulated/floor/redwhite{
 	dir = 6
@@ -63456,6 +63500,10 @@
 /obj/cable{
 	icon_state = "2-4"
 	},
+/obj/blind_switch/area{
+	pixel_x = -24;
+	pixel_y = -2
+	},
 /turf/simulated/floor/carpet/blue/fancy/edge/west,
 /area/station/medical/head)
 "xKa" = (
@@ -63472,6 +63520,10 @@
 "xKq" = (
 /obj/stool/chair/comfy{
 	dir = 1
+	},
+/obj/blind_switch/area{
+	pixel_x = -24;
+	pixel_y = -2
 	},
 /turf/simulated/floor/carpet/grime,
 /area/station/crew_quarters/baroffice)
@@ -93138,7 +93190,7 @@ nJe
 qRl
 jAR
 sHJ
-nPe
+czk
 nPe
 lZC
 qSG
