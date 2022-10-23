@@ -5092,6 +5092,10 @@
 "bQY" = (
 /obj/disposalpipe/segment,
 /obj/machinery/light,
+/obj/decal/tile_edge/line/grey{
+	dir = 4;
+	icon_state = "line1"
+	},
 /turf/simulated/floor/grasslush/thinner,
 /area/station/hallway/primary/north)
 "bRk" = (
@@ -5798,7 +5802,7 @@
 /area/station/engine/coldloop)
 "ccd" = (
 /obj/item/clothing/mask/cigarette/random,
-/turf/simulated/floor/airless/black/grime,
+/turf/simulated/floor/black/grime,
 /area/station/storage/warehouse)
 "ccD" = (
 /obj/disposalpipe/segment{
@@ -7383,7 +7387,7 @@
 /area/station/maintenance/outer/north)
 "cGY" = (
 /obj/storage/crate/abcumarker,
-/turf/simulated/floor/airless/black/grime,
+/turf/simulated/floor/black/grime,
 /area/station/storage/warehouse)
 "cHb" = (
 /obj/disposalpipe/segment/produce,
@@ -9278,7 +9282,7 @@
 	dir = 8;
 	pixel_x = -12
 	},
-/turf/simulated/floor/airless/black/grime,
+/turf/simulated/floor/black/grime,
 /area/station/storage/warehouse)
 "drC" = (
 /obj/disposalpipe/segment/transport{
@@ -9463,8 +9467,19 @@
 "dvC" = (
 /turf/simulated/floor/red,
 /area/station/medical/medbay)
+"dvO" = (
+/obj/decal/tile_edge/line/grey{
+	dir = 4;
+	icon_state = "line1"
+	},
+/turf/simulated/floor/grasslush,
+/area/station/hallway/primary/north)
 "dvS" = (
 /obj/disposalpipe/segment,
+/obj/decal/tile_edge/line/grey{
+	dir = 4;
+	icon_state = "line1"
+	},
 /turf/simulated/floor/grasslush,
 /area/station/hallway/primary/north)
 "dvV" = (
@@ -14975,6 +14990,7 @@
 	name = "Freezer - Spare Parts"
 	},
 /obj/machinery/light/small,
+/obj/random_item_spawner/organs/one_to_three,
 /turf/simulated/floor/sanitary/blue,
 /area/station/medical/morgue)
 "fAB" = (
@@ -16158,6 +16174,10 @@
 /area/station/hallway/primary/north)
 "gaT" = (
 /obj/disposalpipe/segment,
+/obj/decal/tile_edge/line/grey{
+	dir = 4;
+	icon_state = "line1"
+	},
 /turf/simulated/floor/grasslush/thinner,
 /area/station/hallway/primary/north)
 "gbj" = (
@@ -19907,6 +19927,10 @@
 	dir = 1;
 	pixel_y = 21
 	},
+/obj/decal/tile_edge/line/grey{
+	dir = 4;
+	icon_state = "line1"
+	},
 /turf/simulated/floor/grasslush,
 /area/station/hallway/primary/north)
 "hxU" = (
@@ -21953,7 +21977,7 @@
 /area/station/ai_monitored/storage/eva)
 "imt" = (
 /obj/machinery/space_heater,
-/turf/simulated/floor/airless/black/grime,
+/turf/simulated/floor/black/grime,
 /area/station/storage/warehouse)
 "imF" = (
 /obj/random_item_spawner/junk/one_or_zero,
@@ -27743,7 +27767,7 @@
 /area/station/science/testchamber)
 "ksi" = (
 /obj/item/storage/wall/toolshelf,
-/turf/simulated/floor/airless/black/grime,
+/turf/simulated/floor/black/grime,
 /area/station/storage/warehouse)
 "ksj" = (
 /obj/machinery/atmospherics/pipe/simple/heat_exchanging{
@@ -32976,7 +33000,6 @@
 	dir = 4;
 	level = -1
 	},
-/obj/firedoor_spawn,
 /turf/simulated/floor/black,
 /area/station/science/bot_storage)
 "mpT" = (
@@ -37319,7 +37342,9 @@
 	icon_state = "2-4"
 	},
 /obj/firedoor_spawn,
-/obj/machinery/secscanner,
+/obj/machinery/secscanner{
+	pixel_y = 11
+	},
 /turf/simulated/floor/black,
 /area/station/security/checkpoint/medical)
 "nTW" = (
@@ -37462,6 +37487,9 @@
 /area/station/crew_quarters/heads)
 "nWw" = (
 /obj/storage/cart/medcart,
+/obj/item/reagent_containers/iv_drip/saline,
+/obj/item/reagent_containers/iv_drip/saline,
+/obj/item/reagent_containers/iv_drip/saline,
 /turf/simulated/floor/blue/checker,
 /area/station/medical/medbay)
 "nWA" = (
@@ -38102,7 +38130,7 @@
 /obj/item/instrument/guitar,
 /obj/item/instrument/banjo,
 /obj/machinery/light/small,
-/turf/simulated/floor/airless/black/grime,
+/turf/simulated/floor/black/grime,
 /area/station/storage/warehouse)
 "ofu" = (
 /turf/simulated/floor/wood{
@@ -39209,6 +39237,8 @@
 	pixel_x = -7;
 	pixel_y = 7
 	},
+/obj/item/reagent_containers/mender/brute,
+/obj/item/reagent_containers/mender/burn,
 /turf/simulated/floor/blue/checker,
 /area/station/medical/medbay)
 "oBh" = (
@@ -43689,7 +43719,7 @@
 	dir = 8;
 	pixel_x = -12
 	},
-/turf/simulated/floor/airless/black/grime,
+/turf/simulated/floor/black/grime,
 /area/station/storage/warehouse)
 "qng" = (
 /obj/machinery/teleport/portal_ring,
@@ -47494,6 +47524,13 @@
 	dir = 8
 	},
 /area/station/hallway/primary/east)
+"rIb" = (
+/obj/decal/tile_edge/line/grey{
+	dir = 4;
+	icon_state = "line1"
+	},
+/turf/simulated/floor/grasslush/thinner,
+/area/station/hallway/primary/north)
 "rIu" = (
 /obj/cable{
 	icon_state = "2-4"
@@ -48712,7 +48749,7 @@
 /area/station/medical/medbay)
 "shp" = (
 /obj/reagent_dispensers/fueltank,
-/turf/simulated/floor/airless/black/grime,
+/turf/simulated/floor/black/grime,
 /area/station/storage/warehouse)
 "shs" = (
 /obj/machinery/light,
@@ -48870,7 +48907,7 @@
 	pixel_x = 5
 	},
 /obj/item/device/light/flashlight,
-/turf/simulated/floor/airless/black/grime,
+/turf/simulated/floor/black/grime,
 /area/station/storage/warehouse)
 "sjC" = (
 /obj/stool/chair/couch{
@@ -49640,7 +49677,7 @@
 /obj/cable{
 	icon_state = "0-4"
 	},
-/turf/simulated/floor/airless/black/grime,
+/turf/simulated/floor/black/grime,
 /area/station/storage/warehouse)
 "sxZ" = (
 /obj/machinery/power/apc/autoname_south,
@@ -54322,6 +54359,10 @@
 	dir = 2;
 	icon_state = "pipe-c"
 	},
+/obj/decal/tile_edge/line/grey{
+	dir = 4;
+	icon_state = "line1"
+	},
 /turf/simulated/floor/grasslush,
 /area/station/hallway/primary/north)
 "ulV" = (
@@ -55103,6 +55144,10 @@
 /obj/disposalpipe/segment,
 /obj/cable{
 	icon_state = "4-8"
+	},
+/obj/decal/tile_edge/line/grey{
+	dir = 4;
+	icon_state = "line1"
 	},
 /turf/simulated/floor/grasslush/thinner,
 /area/station/hallway/primary/north)
@@ -56529,7 +56574,7 @@
 /obj/cable{
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/airless/black/grime,
+/turf/simulated/floor/black/grime,
 /area/station/storage/warehouse)
 "vaD" = (
 /obj/disposalpipe/segment/morgue{
@@ -61472,6 +61517,30 @@
 	icon_state = "line2";
 	dir = 5
 	},
+/obj/item/clothing/shoes/black{
+	desc = "You have no idea how a robot with wheels for locomotion could possibly require these.";
+	name = "Beepsky's Shoes";
+	pixel_x = -9;
+	pixel_y = -7
+	},
+/obj/item/clothing/suit/det_suit/beepsky{
+	pixel_x = -7;
+	pixel_y = 5
+	},
+/obj/item/diary{
+	pixel_x = 10;
+	pixel_y = 5
+	},
+/obj/item/storage/photo_album/beepsky{
+	pixel_x = 9;
+	pixel_y = -6
+	},
+/obj/item/clothing/head/NTberet{
+	desc = "It's a momento, I guess. An old keepsake. And maybe a reminder of the things we've left behind.";
+	name = "Old Beret";
+	pixel_x = -7;
+	pixel_y = 5
+	},
 /turf/simulated/floor/twotone/red,
 /area/station/security/beepsky)
 "wRm" = (
@@ -62359,7 +62428,7 @@
 	},
 /obj/item/clothing/suit/hi_vis,
 /obj/item/storage/pill_bottle/cyberpunk,
-/turf/simulated/floor/airless/black/grime,
+/turf/simulated/floor/black/grime,
 /area/station/storage/warehouse)
 "xhI" = (
 /obj/disposalpipe/segment,
@@ -63433,7 +63502,7 @@
 	},
 /area/station/crew_quarters/pool)
 "xCu" = (
-/turf/simulated/floor/airless/black/grime,
+/turf/simulated/floor/black/grime,
 /area/station/storage/warehouse)
 "xCv" = (
 /obj/disposalpipe/segment/mail,
@@ -107239,9 +107308,9 @@ hjS
 gha
 sLH
 hxN
-tfp
-gmv
-gmv
+dvO
+rIb
+rIb
 ulT
 uzd
 gaT
