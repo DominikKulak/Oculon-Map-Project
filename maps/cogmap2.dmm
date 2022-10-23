@@ -4947,6 +4947,11 @@
 	},
 /turf/simulated/floor/black,
 /area/station/medical/robotics)
+"bOA" = (
+/obj/machinery/light/small,
+/obj/decal/cleanable/ash,
+/turf/unsimulated/floor/grime,
+/area/station/medical/asylum/main)
 "bOB" = (
 /obj/machinery/atmospherics/pipe/simple/heat_exchanging{
 	dir = 10
@@ -5193,6 +5198,7 @@
 	name = "mysterious computer";
 	pixel_y = 32
 	},
+/obj/decal/cleanable/dirt/dirt2,
 /turf/unsimulated/floor/specialroom/bar,
 /area/station/medical/asylum/main)
 "bTs" = (
@@ -6995,6 +7001,7 @@
 	name = "Safety Shutters";
 	pixel_y = -24
 	},
+/obj/decal/cleanable/dirt/dirt3,
 /turf/unsimulated/floor/white/grime,
 /area/station/medical/asylum/main)
 "czK" = (
@@ -23106,6 +23113,13 @@
 /obj/grille/steel,
 /turf/simulated/floor/plating,
 /area/space)
+"iIm" = (
+/obj/stool/chair{
+	dir = 8
+	},
+/obj/decal/cleanable/dirt/dirt2,
+/turf/unsimulated/floor/white/grime,
+/area/station/medical/asylum/main)
 "iIB" = (
 /obj/disposalpipe/segment/morgue{
 	dir = 4
@@ -24319,6 +24333,7 @@
 	icon_state = "hvent";
 	name = "defunct vent"
 	},
+/obj/decal/cleanable/rust/jen,
 /turf/unsimulated/floor/grime,
 /area/station/medical/asylum/main)
 "jiA" = (
@@ -30790,6 +30805,12 @@
 	},
 /turf/simulated/floor/plating,
 /area/station/crew_quarters/market)
+"lAl" = (
+/obj/decal/cleanable/dirt{
+	dir = 8
+	},
+/turf/unsimulated/floor/white/grime,
+/area/station/medical/asylum/main)
 "lAy" = (
 /turf/simulated/floor/grasslush/thinner,
 /area/station/hydroponics/bay)
@@ -31838,6 +31859,10 @@
 	dir = 4
 	},
 /area/station/mining/staff_room)
+"lTc" = (
+/obj/decal/cleanable/dirt/dirt2,
+/turf/unsimulated/floor/grime,
+/area/station/medical/asylum/main)
 "lTi" = (
 /obj/lattice{
 	dir = 6;
@@ -34380,6 +34405,7 @@
 	desc = "A big rolling laundry cart.";
 	name = "laundry cart"
 	},
+/obj/decal/cleanable/dirt/dirt2,
 /turf/unsimulated/floor/grime,
 /area/station/medical/asylum/main)
 "mRP" = (
@@ -38514,6 +38540,7 @@
 /obj/cable{
 	icon_state = "0-4"
 	},
+/obj/decal/cleanable/dirt/dirt2,
 /turf/unsimulated/floor/grime,
 /area/station/medical/asylum/main)
 "onJ" = (
@@ -44203,6 +44230,7 @@
 "qwu" = (
 /obj/table,
 /obj/machinery/microwave,
+/obj/decal/cleanable/rust/jen,
 /turf/unsimulated/floor/white/grime,
 /area/station/medical/asylum/main)
 "qwE" = (
@@ -45849,6 +45877,10 @@
 	dir = 5
 	},
 /area/station/hangar/arrivals)
+"rfy" = (
+/obj/decal/cleanable/ash,
+/turf/unsimulated/floor/white/grime,
+/area/station/medical/asylum/main)
 "rfF" = (
 /obj/machinery/door/airlock/pyro/alt,
 /obj/decal/mule/dropoff,
@@ -49412,6 +49444,10 @@
 /obj/decal/cleanable/cobweb,
 /turf/simulated/floor/plating/jen,
 /area/station/crew_quarters/quartersB)
+"suY" = (
+/obj/decal/cleanable/dirt/dirt3,
+/turf/unsimulated/floor/grime,
+/area/station/medical/asylum/main)
 "svo" = (
 /obj/table/wood/auto,
 /obj/machinery/light/lamp/green{
@@ -64914,6 +64950,10 @@
 "ybZ" = (
 /turf/simulated/floor/white,
 /area/station/medical/medbooth)
+"yca" = (
+/obj/decal/cleanable/dirt/dirt3,
+/turf/unsimulated/floor/specialroom/bar,
+/area/station/medical/asylum/main)
 "ycc" = (
 /obj/disposalpipe/segment/mail{
 	dir = 4
@@ -144282,7 +144322,7 @@ ihi
 pJt
 gYF
 nVX
-nVX
+lTc
 nVX
 nVX
 pJt
@@ -145190,7 +145230,7 @@ fhO
 nVX
 nVX
 nVX
-nVX
+suY
 pJt
 vyA
 ceJ
@@ -145782,7 +145822,7 @@ uQw
 rYB
 rYB
 bTg
-hNd
+iIm
 hNd
 hNd
 pJt
@@ -146093,7 +146133,7 @@ vvR
 vvR
 wRb
 vtp
-gvM
+bOA
 pJt
 fiz
 tSY
@@ -146386,7 +146426,7 @@ fAg
 rYB
 rYB
 bTg
-rYB
+rfy
 rYB
 czI
 pJt
@@ -146395,7 +146435,7 @@ uFf
 kZP
 pJt
 vtp
-nVX
+lTc
 bTg
 oUc
 eXP
@@ -146685,7 +146725,7 @@ ihi
 ihi
 pJt
 qSD
-rYB
+lAl
 fEF
 pJt
 qwu
@@ -146699,7 +146739,7 @@ pJt
 jVm
 cpX
 bTg
-oUc
+yca
 tqy
 fpl
 pJt
