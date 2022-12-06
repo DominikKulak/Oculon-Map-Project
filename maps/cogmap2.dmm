@@ -3149,7 +3149,7 @@
 /obj/table/scrap/auto,
 /obj/item/clothing/gloves/yellow,
 /obj/decal/cleanable/dirt/jen,
-/turf/simulated/floor/minitiles,
+/turf/simulated/floor/minitiles/black,
 /area/evilreaver/storage)
 "bfP" = (
 /obj/disposalpipe/segment,
@@ -3543,6 +3543,7 @@
 	dir = 4
 	},
 /obj/decal/cleanable/dirt/jen,
+/obj/random_item_spawner/junk/one_or_zero,
 /turf/simulated/floor/plating/jen,
 /area/evilreaver/storage)
 "bnb" = (
@@ -7598,7 +7599,7 @@
 	dir = 4;
 	pixel_x = 12
 	},
-/turf/simulated/floor/minitiles,
+/turf/simulated/floor/minitiles/black,
 /area/evilreaver/storage)
 "cBT" = (
 /turf/simulated/wall/auto/jen/green,
@@ -10568,6 +10569,10 @@
 /area/station/security/brig)
 "dFd" = (
 /obj/decal/cleanable/dirt/jen,
+/obj/machinery/light/small{
+	dir = 4;
+	pixel_x = 12
+	},
 /turf/simulated/floor/stairs{
 	icon_state = "Stairs2_wide"
 	},
@@ -19239,6 +19244,11 @@
 /area/station/storage/warehouse)
 "gOO" = (
 /obj/decal/cleanable/rust/jen,
+/obj/item/clothing/gloves/yellow{
+	name = "insulted gloves";
+	desc = "They are really mad at someone.";
+	anchored = 1
+	},
 /turf/simulated/floor/plating/jen,
 /area/station/hangar/catering{
 	name = "Catering Hangar"
@@ -21476,9 +21486,9 @@
 /turf/simulated/wall/auto/reinforced/jen,
 /area/station/routing/medsci)
 "hDT" = (
-/obj/machinery/rkit,
+/obj/machinery/arc_electroplater,
 /obj/decal/cleanable/dirt/jen,
-/turf/simulated/floor/minitiles,
+/turf/simulated/floor/minitiles/black,
 /area/evilreaver/storage)
 "hDZ" = (
 /obj/cable{
@@ -22889,9 +22899,11 @@
 /area/station/crew_quarters/catering)
 "icz" = (
 /obj/decal/cleanable/dirt/jen,
-/obj/machinery/light/emergency{
-	dir = 4
+/obj/machinery/light/small{
+	dir = 4;
+	pixel_x = 12
 	},
+/obj/machinery/dispenser,
 /turf/simulated/floor/plating/jen,
 /area/evilreaver/storage)
 "icD" = (
@@ -23268,7 +23280,7 @@
 	pixel_y = 5
 	},
 /obj/decal/cleanable/dirt/jen,
-/turf/simulated/floor/minitiles,
+/turf/simulated/floor/minitiles/black,
 /area/evilreaver/storage)
 "ijd" = (
 /obj/table/auto,
@@ -24140,6 +24152,18 @@
 	},
 /turf/simulated/floor/engine,
 /area/station/engine/core)
+"iyE" = (
+/obj/decal/tile_edge/stripe/extra_big{
+	dir = 8;
+	tag = "icon-xtra_bigstripe-edge (WEST)"
+	},
+/obj/railing/yellow/reinforced{
+	dir = 8
+	},
+/obj/decal/cleanable/dirt/jen,
+/obj/random_item_spawner/junk/one_or_zero,
+/turf/simulated/floor/industrial,
+/area/evilreaver/storage)
 "iyH" = (
 /obj/cable/yellow{
 	icon_state = "4-8"
@@ -27506,6 +27530,15 @@
 	dir = 4
 	},
 /area/station/hallway/primary/northeast)
+"jFp" = (
+/obj/decal/cleanable/dirt/jen,
+/obj/random_item_spawner/junk/one_or_zero,
+/obj/machinery/light/small{
+	dir = 4;
+	pixel_x = 12
+	},
+/turf/simulated/floor/grey/blackgrime,
+/area/evilreaver/storage)
 "jFu" = (
 /obj/decal/tile_edge/line/black{
 	dir = 9;
@@ -32831,7 +32864,7 @@
 	pixel_y = 3
 	},
 /obj/decal/cleanable/dirt/jen,
-/turf/simulated/floor/minitiles,
+/turf/simulated/floor/minitiles/black,
 /area/evilreaver/storage)
 "lvL" = (
 /obj/decal/tile_edge/line/black{
@@ -33398,9 +33431,9 @@
 	},
 /area/station/crew_quarters/cafeteria)
 "lFe" = (
-/obj/machinery/manufacturer/mechanic,
+/obj/machinery/nanofab/refining,
 /obj/decal/cleanable/dirt/jen,
-/turf/simulated/floor/minitiles,
+/turf/simulated/floor/minitiles/black,
 /area/evilreaver/storage)
 "lFf" = (
 /obj/decal/cleanable/rust/jen,
@@ -33825,14 +33858,6 @@
 	dir = 4
 	},
 /area/station/hallway/primary/southwest)
-"lNe" = (
-/obj/decal/cleanable/dirt/jen,
-/obj/machinery/light/emergency{
-	dir = 4
-	},
-/obj/random_item_spawner/junk/one_or_zero,
-/turf/simulated/floor/plating/jen,
-/area/evilreaver/storage)
 "lNm" = (
 /obj/stool/chair{
 	dir = 8
@@ -36036,6 +36061,7 @@
 "mBD" = (
 /obj/decal/cleanable/dirt/jen,
 /obj/rack,
+/obj/item/tank/air,
 /turf/simulated/floor/plating/jen,
 /area/evilreaver/storage)
 "mBH" = (
@@ -42047,7 +42073,7 @@
 	pixel_y = 12
 	},
 /obj/decal/cleanable/dirt/jen,
-/turf/simulated/floor/minitiles,
+/turf/simulated/floor/minitiles/black,
 /area/evilreaver/storage)
 "oCS" = (
 /obj/decal/tile_edge/line/black{
@@ -44521,7 +44547,7 @@
 	icon_state = "server0";
 	name = "downed server"
 	},
-/turf/simulated/floor/minitiles,
+/turf/simulated/floor/minitiles/black,
 /area/evilreaver/storage)
 "pup" = (
 /obj/cable{
@@ -49482,6 +49508,11 @@
 	},
 /turf/simulated/wall/auto/jen,
 /area/station/crew_quarters/catering)
+"rnc" = (
+/obj/decal/cleanable/dirt/jen,
+/obj/storage/closet/fire,
+/turf/simulated/floor/grey/blackgrime,
+/area/evilreaver/storage)
 "rnf" = (
 /obj/grille/catwalk/jen/side{
 	dir = 4
@@ -49841,6 +49872,12 @@
 	},
 /turf/simulated/floor/grime,
 /area/station/crew_quarters/cafeteria)
+"rrS" = (
+/obj/decal/cleanable/dirt/jen,
+/obj/rack,
+/obj/item/device/light/flashlight,
+/turf/simulated/floor/plating/jen,
+/area/evilreaver/storage)
 "rsc" = (
 /turf/simulated/wall/auto/supernorn/wood,
 /area/station/crew_quarters/pool)
@@ -50180,6 +50217,12 @@
 /obj/wingrille_spawn/auto/reinforced,
 /turf/simulated/floor/plating,
 /area/station/solar/north)
+"rwl" = (
+/obj/table/scrap/auto,
+/obj/decal/cleanable/dirt/jen,
+/obj/item/device/light/flashlight,
+/turf/simulated/floor/grey/blackgrime,
+/area/evilreaver/storage)
 "rwo" = (
 /obj/disposalpipe/segment,
 /obj/disposalpipe/segment/transport{
@@ -51338,6 +51381,11 @@
 	icon_state = "engine_caution_north"
 	},
 /area/station/ai_monitored/armory)
+"rTX" = (
+/obj/decal/cleanable/dirt/jen,
+/obj/machinery/power/lgenerator,
+/turf/simulated/floor/grey/blackgrime,
+/area/evilreaver/storage)
 "rTZ" = (
 /obj/table/auto,
 /obj/item/pen/pencil,
@@ -54521,7 +54569,7 @@
 	dir = 4;
 	pixel_x = 12
 	},
-/turf/simulated/floor/minitiles,
+/turf/simulated/floor/minitiles/black,
 /area/evilreaver/storage)
 "sWl" = (
 /obj/machinery/door/airlock/pyro/glass{
@@ -60272,14 +60320,6 @@
 	name = "reinforced plating"
 	},
 /area/station/quartermaster/refinery)
-"uXE" = (
-/obj/decal/cleanable/dirt/jen,
-/obj/machinery/light/small{
-	pixel_y = -10
-	},
-/obj/random_item_spawner/junk/one_or_zero,
-/turf/simulated/floor/grey/blackgrime,
-/area/evilreaver/storage)
 "uYf" = (
 /obj/disposalpipe/segment,
 /turf/simulated/floor/white/checker2{
@@ -76917,7 +76957,7 @@ diZ
 dJt
 dJt
 oJa
-oJa
+rwl
 oJa
 dJt
 dJt
@@ -77221,7 +77261,7 @@ hJF
 jGH
 jGH
 jGH
-psR
+rnc
 nxk
 diZ
 mSk
@@ -77507,7 +77547,7 @@ diZ
 diZ
 diZ
 nxk
-psR
+rTX
 psR
 psR
 iCt
@@ -83243,7 +83283,7 @@ diZ
 diZ
 dJt
 dJt
-weC
+iyE
 weC
 qpk
 jLJ
@@ -83256,13 +83296,13 @@ dJt
 qTx
 psR
 psR
+uNu
 psR
 psR
 psR
 psR
 psR
-psR
-psR
+uNu
 kvS
 psR
 psR
@@ -84166,7 +84206,7 @@ dJt
 dJt
 sNG
 psR
-uXE
+kvS
 dJt
 dJt
 diZ
@@ -84466,7 +84506,7 @@ diZ
 diZ
 diZ
 dJt
-kvS
+jFp
 psR
 psR
 dJt
@@ -86278,7 +86318,7 @@ diZ
 diZ
 diZ
 nxk
-mBD
+rrS
 ryP
 mBD
 nxk
@@ -86582,7 +86622,7 @@ diZ
 dJt
 icz
 ryP
-lNe
+oMe
 dJt
 diZ
 diZ
