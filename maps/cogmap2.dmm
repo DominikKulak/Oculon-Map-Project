@@ -354,10 +354,7 @@
 	},
 /area/station/hangar/main)
 "afo" = (
-/obj/machinery/door/airlock/pyro/glass/security{
-	aiControlDisabled = 1;
-	req_access = null
-	},
+/obj/machinery/door/airlock/pyro/glass/security,
 /obj/decal/mule/dropoff,
 /obj/access_spawn/security,
 /obj/firedoor_spawn,
@@ -1045,6 +1042,7 @@
 /area/station/maintenance/disposal)
 "aql" = (
 /obj/decal/cleanable/rust/jen,
+/obj/critter/spider/baby,
 /turf/simulated/floor/plating,
 /area/station/security/brig)
 "aqn" = (
@@ -1556,10 +1554,7 @@
 /obj/disposalpipe/segment/mail{
 	dir = 4
 	},
-/obj/machinery/door/airlock/pyro/glass/security{
-	aiControlDisabled = 1;
-	req_access = null
-	},
+/obj/machinery/door/airlock/pyro/glass/security,
 /obj/decal/mule/dropoff,
 /obj/access_spawn,
 /obj/disposalpipe/segment,
@@ -2157,6 +2152,23 @@
 	dir = 8
 	},
 /area/station/hangar/arrivals)
+"aIq" = (
+/obj/stool/chair/office/red{
+	dir = 4
+	},
+/obj/machinery/light/small{
+	dir = 8;
+	pixel_x = -12
+	},
+/obj/machinery/camera{
+	c_tag = "autotag";
+	dir = 4;
+	name = "autoname - SS13";
+	pixel_x = -10;
+	tag = ""
+	},
+/turf/simulated/floor/wood/seven,
+/area/station/security/hos)
 "aIB" = (
 /obj/wingrille_spawn/auto/reinforced,
 /obj/window_blinds/cog2/middle,
@@ -2832,10 +2844,7 @@
 /turf/simulated/floor/plating/jen,
 /area/station/medical/medbay)
 "aYh" = (
-/obj/machinery/door/airlock/pyro/glass/security{
-	aiControlDisabled = 1;
-	req_access = null
-	},
+/obj/machinery/door/airlock/pyro/glass/security,
 /obj/decal/mule/dropoff,
 /obj/access_spawn/security,
 /obj/machinery/atmospherics/pipe/simple{
@@ -7027,18 +7036,6 @@
 	},
 /turf/simulated/floor/plating/jen,
 /area/station/solar/east)
-"ckD" = (
-/obj/machinery/camera{
-	c_tag = "autotag";
-	dir = 5;
-	name = "autoname - SS13";
-	pixel_x = -10;
-	tag = ""
-	},
-/turf/simulated/floor/grey/blackgrime,
-/area/station/hangar/catering{
-	name = "Catering Hangar"
-	})
 "ckV" = (
 /obj/table/reinforced/auto,
 /obj/disposalpipe/segment/mail{
@@ -7799,9 +7796,6 @@
 /turf/simulated/floor/plating/jen,
 /area/station/engine/ptl)
 "cxf" = (
-/obj/machinery/computer/riotgear{
-	pixel_y = 28
-	},
 /turf/simulated/floor/redblack{
 	dir = 1
 	},
@@ -8243,11 +8237,11 @@
 	aiControlDisabled = 1
 	},
 /obj/decal/mule/dropoff,
-/obj/access_spawn/security,
 /obj/disposalpipe/segment/ejection,
 /obj/firedoor_spawn,
+/obj/access_spawn/hos,
 /turf/simulated/floor/black,
-/area/station/security/main)
+/area/station/ai_monitored/armory)
 "cDo" = (
 /obj/decal/tile_edge/line/black{
 	icon_state = "line2";
@@ -13958,6 +13952,13 @@
 /obj/machinery/power/apc/autoname_west,
 /obj/cable{
 	icon_state = "0-4"
+	},
+/obj/machinery/camera{
+	c_tag = "autotag";
+	dir = 5;
+	name = "autoname - SS13";
+	pixel_x = -10;
+	tag = ""
 	},
 /turf/simulated/floor/grey/blackgrime,
 /area/station/hangar/catering{
@@ -21253,10 +21254,7 @@
 /turf/simulated/floor/grey,
 /area/station/crew_quarters/courtroom)
 "gZD" = (
-/obj/machinery/door/airlock/pyro/glass/security{
-	aiControlDisabled = 1;
-	req_access = null
-	},
+/obj/machinery/door/airlock/pyro/glass/security,
 /obj/decal/mule/dropoff,
 /obj/access_spawn/security,
 /obj/disposalpipe/segment,
@@ -23141,7 +23139,7 @@
 	req_access = null
 	},
 /obj/decal/mule/dropoff,
-/obj/access_spawn/security,
+/obj/access_spawn/hos,
 /obj/cable{
 	icon_state = "4-8"
 	},
@@ -24358,10 +24356,7 @@
 /turf/simulated/floor/industrial,
 /area/evilreaver/storage)
 "ibC" = (
-/obj/machinery/door/airlock/pyro/glass/security{
-	aiControlDisabled = 1;
-	req_access = null
-	},
+/obj/machinery/door/airlock/pyro/glass/security,
 /obj/decal/mule/dropoff,
 /obj/access_spawn/security,
 /obj/machinery/atmospherics/pipe/simple{
@@ -25919,6 +25914,9 @@
 	},
 /turf/simulated/floor,
 /area/station/crew_quarters/market)
+"iAm" = (
+/turf/space,
+/area/station/security/brig)
 "iAp" = (
 /obj/disposalpipe/segment/morgue,
 /obj/machinery/light/emergency{
@@ -27663,10 +27661,7 @@
 /area/station/science/lobby)
 "jez" = (
 /obj/decal/mule/dropoff,
-/obj/machinery/door/airlock/pyro/glass/security{
-	aiControlDisabled = 1;
-	req_access = null
-	},
+/obj/machinery/door/airlock/pyro/glass/security,
 /obj/access_spawn/security,
 /obj/cable{
 	icon_state = "1-2"
@@ -34454,6 +34449,9 @@
 /obj/machinery/atmospherics/pipe/simple{
 	dir = 4
 	},
+/obj/decal/tile_edge/stripe/extra_big{
+	dir = 9
+	},
 /turf/simulated/floor/redblack{
 	dir = 5
 	},
@@ -35613,10 +35611,7 @@
 /obj/disposalpipe/segment/mail{
 	dir = 4
 	},
-/obj/machinery/door/airlock/pyro/glass/security{
-	aiControlDisabled = 1;
-	req_access = null
-	},
+/obj/machinery/door/airlock/pyro/glass/security,
 /obj/decal/mule/dropoff,
 /obj/access_spawn,
 /obj/firedoor_spawn,
@@ -38951,6 +38946,9 @@
 	},
 /area/mining/magnet)
 "mOi" = (
+/obj/decal/tile_edge/stripe/extra_big{
+	dir = 5
+	},
 /turf/simulated/floor/redblack{
 	dir = 9
 	},
@@ -40710,6 +40708,14 @@
 /obj/machinery/light,
 /turf/simulated/floor/plating/jen,
 /area/station/engine/elect)
+"nqK" = (
+/obj/decal/tile_edge/line/black{
+	dir = 1;
+	icon_state = "line1";
+	tag = "icon-line1 (NORTH)"
+	},
+/turf/simulated/floor/wood/seven,
+/area/station/security/hos)
 "nqM" = (
 /obj/storage/closet,
 /obj/decal/cleanable/dirt/jen,
@@ -42397,10 +42403,7 @@
 /turf/simulated/floor/neutral,
 /area/station/crew_quarters/market)
 "nTG" = (
-/obj/machinery/door/airlock/pyro/glass/security{
-	aiControlDisabled = 1;
-	req_access = null
-	},
+/obj/machinery/door/airlock/pyro/glass/security,
 /obj/access_spawn/security,
 /obj/decal/mule/dropoff,
 /obj/cable{
@@ -44930,9 +44933,10 @@
 /obj/cable{
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/redblack{
-	dir = 1
+/obj/machinery/computer/riotgear{
+	pixel_y = 28
 	},
+/turf/simulated/floor/circuit/red,
 /area/station/security/main)
 "oHj" = (
 /obj/wingrille_spawn/auto/reinforced,
@@ -52312,10 +52316,10 @@
 	aiControlDisabled = 1
 	},
 /obj/decal/mule/dropoff,
-/obj/access_spawn/security,
 /obj/firedoor_spawn,
+/obj/access_spawn/hos,
 /turf/simulated/floor/black,
-/area/station/security/main)
+/area/station/ai_monitored/armory)
 "rjz" = (
 /obj/stool,
 /obj/cable{
@@ -54100,6 +54104,19 @@
 /obj/reagent_dispensers/foamtank,
 /turf/simulated/floor/plating/jen,
 /area/station/science/gen_storage)
+"rMi" = (
+/obj/disposalpipe/segment/ejection,
+/obj/machinery/light{
+	dir = 4;
+	pixel_x = 10
+	},
+/obj/decal/tile_edge/stripe/corner/extra_big2{
+	dir = 9
+	},
+/turf/simulated/floor/redblack{
+	dir = 4
+	},
+/area/station/security/main)
 "rMs" = (
 /obj/machinery/light/small{
 	dir = 4;
@@ -54440,10 +54457,7 @@
 /turf/simulated/floor/sanitary/blue,
 /area/station/medical/morgue)
 "rSL" = (
-/obj/machinery/door/airlock/pyro/glass/security{
-	aiControlDisabled = 1;
-	req_access = null
-	},
+/obj/machinery/door/airlock/pyro/glass/security,
 /obj/decal/mule/dropoff,
 /obj/access_spawn/security,
 /obj/cable{
@@ -57113,6 +57127,9 @@
 /obj/machinery/light/emergency{
 	dir = 8
 	},
+/obj/decal/tile_edge/stripe/corner/extra_big2{
+	dir = 5
+	},
 /turf/simulated/floor/redblack{
 	dir = 8
 	},
@@ -57541,10 +57558,7 @@
 /turf/simulated/floor/plating/jen,
 /area/station/maintenance/inner/east)
 "sQD" = (
-/obj/machinery/door/airlock/pyro/glass/security{
-	aiControlDisabled = 1;
-	req_access = null
-	},
+/obj/machinery/door/airlock/pyro/glass/security,
 /obj/decal/mule/dropoff,
 /obj/access_spawn/security,
 /obj/disposalpipe/segment,
@@ -58190,7 +58204,10 @@
 /turf/simulated/floor/plating/jen,
 /area/station/quartermaster/office)
 "sZx" = (
-/obj/machinery/light,
+/obj/machinery/light{
+	dir = 4;
+	pixel_x = 10
+	},
 /turf/simulated/floor/red,
 /area/station/security/hos)
 "sZM" = (
@@ -61591,9 +61608,7 @@
 /turf/simulated/floor/red/redblackchecker,
 /area/station/security/main)
 "ujf" = (
-/obj/machinery/door/airlock/pyro/security/alt{
-	aiControlDisabled = 1
-	},
+/obj/machinery/door/airlock/pyro/security/alt,
 /obj/disposalpipe/segment/ejection,
 /obj/access_spawn/security,
 /obj/decal/mule/dropoff,
@@ -62435,6 +62450,12 @@
 /obj/machinery/light{
 	dir = 4;
 	pixel_x = 10
+	},
+/obj/machinery/camera{
+	c_tag = "autotag";
+	dir = 9;
+	name = "autoname - SS13";
+	tag = ""
 	},
 /turf/simulated/floor/wood/seven,
 /area/station/crew_quarters/cafeteria)
@@ -63642,6 +63663,15 @@
 	icon_state = "red2"
 	},
 /area/station/crew_quarters/fitness)
+"uSW" = (
+/obj/machinery/door/airlock/pyro/security/alt{
+	aiControlDisabled = 1
+	},
+/obj/firedoor_spawn,
+/obj/access_spawn/hos,
+/obj/decal/mule/dropoff,
+/turf/simulated/floor/red,
+/area/station/security/hos)
 "uTe" = (
 /obj/disposaloutlet,
 /obj/machinery/conveyor{
@@ -63857,6 +63887,15 @@
 	name = "reinforced plating"
 	},
 /area/station/science/teleporter)
+"uVW" = (
+/obj/table/reinforced/auto,
+/obj/machinery/door/airlock/pyro/glass/windoor{
+	dir = 4
+	},
+/obj/access_spawn/hos,
+/obj/firedoor_spawn,
+/turf/simulated/floor/wood/seven,
+/area/station/security/hos)
 "uWg" = (
 /obj/disposalpipe/segment{
 	dir = 8;
@@ -66198,6 +66237,16 @@
 	},
 /turf/simulated/floor/red/redblackchecker,
 /area/station/hangar/sec)
+"vMI" = (
+/obj/machinery/atmospherics/pipe/simple,
+/obj/cable{
+	icon_state = "1-2"
+	},
+/obj/decal/tile_edge/stripe/extra_big{
+	dir = 1
+	},
+/turf/simulated/floor/black,
+/area/station/security/main)
 "vNf" = (
 /obj/storage/crate/furnacefuel,
 /obj/disposalpipe/segment,
@@ -68841,7 +68890,6 @@
 /turf/simulated/floor/plating/jen,
 /area/station/science/gen_storage)
 "wCE" = (
-/obj/critter/spider/baby,
 /obj/decal/cleanable/rust/jen,
 /obj/decal/poster/wallsign/poster_clown{
 	pixel_x = -4;
@@ -68850,6 +68898,9 @@
 /obj/machinery/light/small{
 	dir = 8;
 	pixel_x = -12
+	},
+/obj/item/reagent_containers/glass/bucket/red{
+	anchored = 1
 	},
 /turf/simulated/floor/plating,
 /area/station/security/brig)
@@ -70468,10 +70519,7 @@
 	},
 /area/station/ai_monitored/armory)
 "xcB" = (
-/obj/machinery/door/airlock/pyro/glass/security{
-	aiControlDisabled = 1;
-	req_access = null
-	},
+/obj/machinery/door/airlock/pyro/glass/security,
 /obj/decal/mule/dropoff,
 /obj/access_spawn/security,
 /obj/firedoor_spawn,
@@ -135384,7 +135432,7 @@ pJh
 bUB
 utZ
 utZ
-diZ
+iAm
 mLZ
 qss
 reO
@@ -135686,7 +135734,7 @@ vge
 ybr
 iuL
 utZ
-diZ
+iAm
 mLZ
 mLZ
 dds
@@ -136894,8 +136942,8 @@ jnU
 iRR
 wPV
 utZ
-diZ
-mLZ
+utZ
+utZ
 mLZ
 wCE
 aql
@@ -137195,9 +137243,9 @@ oEe
 fUj
 qAL
 sZx
-utZ
-diZ
-mLZ
+uSW
+nqK
+aIq
 mLZ
 jhD
 kGQ
@@ -137498,8 +137546,8 @@ utZ
 rtc
 utZ
 utZ
-mLZ
-mLZ
+utZ
+uVW
 mLZ
 mLZ
 mLZ
@@ -138102,9 +138150,9 @@ cxf
 jnT
 xBl
 hnt
-fJf
+ruo
 oGZ
-iHp
+vMI
 iHp
 dCy
 iHp
@@ -138406,7 +138454,7 @@ wmp
 tjo
 cDk
 lmD
-wzS
+rMi
 sTQ
 jAk
 sTQ
@@ -143916,7 +143964,7 @@ usu
 gvX
 kUD
 gzH
-ckD
+smB
 etR
 tbe
 jIu
