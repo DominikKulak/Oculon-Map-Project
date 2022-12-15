@@ -460,6 +460,12 @@
 "agC" = (
 /obj/table/wood/auto,
 /obj/item/storage/toolbox/artistic,
+/obj/machinery/camera{
+	c_tag = "autotag";
+	dir = 1;
+	name = "autoname - SS13";
+	tag = ""
+	},
 /turf/simulated/floor/wood,
 /area/station/crew_quarters/arcade{
 	name = "Arts Room"
@@ -482,6 +488,12 @@
 /obj/machinery/light/small{
 	dir = 4;
 	pixel_x = 10
+	},
+/obj/machinery/camera{
+	c_tag = "autotag";
+	dir = 0;
+	name = "autoname - SS13";
+	pixel_y = 20
 	},
 /turf/simulated/floor/stairs/wood2/wide{
 	dir = 4
@@ -23742,6 +23754,14 @@
 /obj/item/pinpointer,
 /turf/simulated/floor/black,
 /area/listeningpost)
+"hzj" = (
+/obj/decal/cleanable/dirt/jen,
+/obj/machinery/light/small{
+	dir = 4;
+	pixel_x = 10
+	},
+/turf/simulated/floor/plating/jen,
+/area/station/maintenance/outer/east)
 "hzn" = (
 /obj/decal/cleanable/dirt/jen,
 /obj/machinery/light/small{
@@ -36934,12 +36954,15 @@
 /turf/simulated/floor/carpet/grime,
 /area/station/maintenance/outer/sw)
 "lGR" = (
-/obj/ladder{
-	id = "dd_vault";
-	layer = 2
-	},
 /obj/decal/cleanable/blood/tracks{
 	dir = 9
+	},
+/obj/ladder{
+	desc = "Is this supposed to be here?";
+	icon_state = "ladder_wall";
+	id = "dd_vault";
+	layer = 2.5;
+	pixel_y = 32
 	},
 /turf/simulated/floor/white/grime,
 /area/station/maintenance/outer/sw)
@@ -47356,6 +47379,9 @@
 /obj/random_item_spawner/junk/one_or_zero,
 /obj/cable{
 	icon_state = "4-8"
+	},
+/obj/machinery/light/small{
+	pixel_y = -10
 	},
 /turf/simulated/floor/plating/jen,
 /area/station/maintenance/outer/east)
@@ -67390,6 +67416,15 @@
 	},
 /turf/simulated/floor/bluegreen,
 /area/station/medical/medbay/treatment1)
+"vkU" = (
+/obj/machinery/light/small{
+	dir = 8;
+	pixel_x = -12
+	},
+/turf/simulated/floor/wood,
+/area/station/crew_quarters/arcade{
+	name = "Arts Room"
+	})
 "vlk" = (
 /obj/decal/tile_edge/line/yellow{
 	dir = 6;
@@ -145415,7 +145450,7 @@ kzh
 kzh
 kzh
 kzh
-kzh
+gqR
 afX
 edj
 qhT
@@ -145717,7 +145752,7 @@ aSc
 aEs
 aEs
 uVy
-csf
+deA
 kMG
 edj
 uMR
@@ -146010,7 +146045,7 @@ diZ
 diZ
 azf
 gMp
-daf
+hzj
 daf
 dWW
 daf
@@ -146019,7 +146054,7 @@ daf
 ine
 daf
 oTH
-csf
+deA
 vec
 xUz
 qXD
@@ -148435,7 +148470,7 @@ xTg
 tCi
 tCi
 tCi
-vIP
+vkU
 vIP
 mNG
 vIP
