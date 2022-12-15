@@ -47107,7 +47107,7 @@
 /area/station/crew_quarters/pool)
 "oOz" = (
 /obj/machinery/door/poddoor/blast{
-	id = dd_vault;
+	id = "sdd_vault";
 	name = "strange vault"
 	},
 /obj/decal/cleanable/blood/tracks{
