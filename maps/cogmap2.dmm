@@ -21580,6 +21580,14 @@
 /obj/item/clothing/suit/fire,
 /obj/item/clothing/mask/gas,
 /obj/item/extinguisher,
+/obj/item/device/analyzer/atmospheric{
+	pixel_x = 9;
+	pixel_y = 12
+	},
+/obj/item/device/analyzer/atmospheric{
+	pixel_x = 8;
+	pixel_y = -5
+	},
 /turf/simulated/floor/twotone/purple,
 /area/station/science/lab)
 "gHR" = (
@@ -26714,15 +26722,7 @@
 "ikk" = (
 /obj/table,
 /obj/item/clothing/suit/straight_jacket{
-	pixel_x = 10;
-	pixel_y = 8
-	},
-/obj/item/clothing/suit/straight_jacket{
 	pixel_x = 1;
-	pixel_y = 8
-	},
-/obj/item/clothing/suit/straight_jacket{
-	pixel_x = -8;
 	pixel_y = 8
 	},
 /obj/machinery/light/small{
@@ -28998,21 +28998,6 @@
 /obj/machinery/drainage,
 /turf/simulated/floor/plating/jen,
 /area/station/science/lobby)
-"iVv" = (
-/obj/grille/catwalk{
-	dir = 5
-	},
-/obj/landmark/magnet_shield,
-/obj/securearea{
-	desc = "A warning that demarcates where the magnetic area begins.";
-	dir = 1;
-	icon_state = "magwarning";
-	name = "Magnet Area Boundary"
-	},
-/turf/simulated/floor/airless/plating/catwalk{
-	dir = 1
-	},
-/area/mining/magnet)
 "iVx" = (
 /obj/machinery/camera{
 	c_tag = "autotag";
@@ -30506,10 +30491,6 @@
 	pixel_x = -6;
 	pixel_y = 16
 	},
-/obj/item/wrench,
-/obj/item/screwdriver{
-	pixel_y = 10
-	},
 /obj/item/device/prox_sensor{
 	pixel_x = 2;
 	pixel_y = -8
@@ -30521,6 +30502,13 @@
 /obj/machinery/light{
 	dir = 4
 	},
+/obj/item/device/transfer_valve{
+	pixel_x = -7
+	},
+/obj/item/screwdriver{
+	pixel_y = 10
+	},
+/obj/item/wrench,
 /turf/simulated/floor/purpleblack{
 	dir = 4
 	},
@@ -74386,6 +74374,13 @@
 /obj/stool/chair,
 /turf/simulated/floor/circuit,
 /area/station/crew_quarters/cafeteria)
+"wJv" = (
+/obj/disposalpipe/segment/ejection{
+	dir = 4
+	},
+/obj/wingrille_spawn/auto/crystal/reinforced,
+/turf/simulated/floor/plating,
+/area/station/security/main)
 "wJH" = (
 /obj/table/wood/auto,
 /obj/machinery/light/lamp/green{
@@ -99744,8 +99739,8 @@ guo
 guo
 guo
 guo
-iVv
-iVv
+guo
+guo
 guo
 guo
 guo
@@ -143570,7 +143565,7 @@ dCy
 iHp
 dwd
 gxi
-vhz
+wJv
 ujd
 xYn
 plB
