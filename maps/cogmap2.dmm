@@ -3416,6 +3416,10 @@
 /obj/machinery/light/emergency{
 	dir = 8
 	},
+/obj/decal/tile_edge/line/blue{
+	dir = 1;
+	icon_state = "line1"
+	},
 /turf/simulated/floor/darkblue/checker,
 /area/station/crew_quarters/radio/lab)
 "bbV" = (
@@ -3580,7 +3584,10 @@
 	pixel_w = -1
 	},
 /obj/loudspeaker,
-/turf/simulated/floor/darkblue/checker,
+/obj/machinery/light/small/floor,
+/turf/simulated/floor/wood{
+	icon_state = "wooden"
+	},
 /area/station/crew_quarters/radio/lab)
 "beh" = (
 /obj/machinery/manufacturer/hangar,
@@ -15385,7 +15392,9 @@
 	pixel_x = -8;
 	pixel_y = 9
 	},
-/turf/simulated/floor/darkblue/checker,
+/turf/simulated/floor/wood{
+	icon_state = "wooden"
+	},
 /area/station/crew_quarters/radio/lab)
 "eyu" = (
 /obj/disposalpipe/segment/transport{
@@ -16291,6 +16300,10 @@
 	dir = 1
 	},
 /obj/disposalpipe/segment,
+/obj/decal/tile_edge/line/blue{
+	dir = 1;
+	icon_state = "line1"
+	},
 /turf/simulated/floor/darkblue/checker,
 /area/station/crew_quarters/radio/lab)
 "eQK" = (
@@ -16749,7 +16762,9 @@
 /obj/cable{
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/darkblue/checker,
+/turf/simulated/floor/wood{
+	icon_state = "wooden"
+	},
 /area/station/crew_quarters/radio/lab)
 "eXB" = (
 /obj/stool/chair/green,
@@ -17218,7 +17233,9 @@
 /obj/cable{
 	icon_state = "0-4"
 	},
-/turf/simulated/floor/darkblue/checker,
+/turf/simulated/floor/wood{
+	icon_state = "wooden"
+	},
 /area/station/crew_quarters/radio/lab)
 "feY" = (
 /turf/simulated/floor/yellow/side{
@@ -20089,7 +20106,9 @@
 	},
 /obj/disposalpipe/segment,
 /obj/item/device/audio_log,
-/turf/simulated/floor/darkblue/checker,
+/turf/simulated/floor/wood{
+	icon_state = "wooden"
+	},
 /area/station/crew_quarters/radio/lab)
 "geF" = (
 /obj/disposalpipe/segment/transport{
@@ -23000,7 +23019,9 @@
 	name = "Radio Station Announcement Computer";
 	req_access_txt = ""
 	},
-/turf/simulated/floor/darkblue/checker,
+/turf/simulated/floor/wood{
+	icon_state = "wooden"
+	},
 /area/station/crew_quarters/radio/lab)
 "gZv" = (
 /turf/simulated/floor/grey,
@@ -24020,7 +24041,9 @@
 	dir = 1;
 	pixel_y = 21
 	},
-/turf/simulated/floor/darkblue/checker,
+/turf/simulated/floor/wood{
+	icon_state = "wooden"
+	},
 /area/station/crew_quarters/radio/lab)
 "hqf" = (
 /obj/stool/chair/office{
@@ -25939,7 +25962,9 @@
 	pixel_w = -1
 	},
 /obj/disposalpipe/segment,
-/turf/simulated/floor/darkblue/checker,
+/turf/simulated/floor/wood{
+	icon_state = "wooden"
+	},
 /area/station/crew_quarters/radio/lab)
 "hTP" = (
 /obj/machinery/camera{
@@ -27596,6 +27621,10 @@
 /obj/cable{
 	icon_state = "4-8"
 	},
+/obj/decal/tile_edge/line/blue{
+	dir = 8;
+	icon_state = "line1"
+	},
 /turf/simulated/floor/darkblue/checker,
 /area/station/crew_quarters/radio/lab)
 "iua" = (
@@ -28968,6 +28997,12 @@
 /obj/decal/cleanable/dirt/jen,
 /turf/simulated/floor/plating,
 /area/station/crew_quarters/market)
+"iPu" = (
+/obj/disposalpipe/segment,
+/turf/simulated/floor/wood{
+	icon_state = "wooden"
+	},
+/area/station/crew_quarters/radio/lab)
 "iPE" = (
 /obj/cable{
 	icon_state = "1-2"
@@ -30640,6 +30675,14 @@
 	},
 /turf/simulated/wall/auto/jen/green,
 /area/station/ranch)
+"jqY" = (
+/obj/disposalpipe/segment,
+/obj/decal/tile_edge/line/blue{
+	dir = 1;
+	icon_state = "line1"
+	},
+/turf/simulated/floor/darkblue/checker,
+/area/station/crew_quarters/radio/lab)
 "jrc" = (
 /obj/machinery/light{
 	dir = 8
@@ -37338,6 +37381,14 @@
 	},
 /turf/simulated/floor/orangeblack,
 /area/listeningpost)
+"lpk" = (
+/obj/cable{
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/wood{
+	icon_state = "wooden"
+	},
+/area/station/crew_quarters/radio/lab)
 "lpo" = (
 /obj/disposalpipe/segment,
 /obj/grille/catwalk/jen/side{
@@ -37544,7 +37595,9 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/turf/simulated/floor/darkblue/checker,
+/turf/simulated/floor/wood{
+	icon_state = "wooden"
+	},
 /area/station/crew_quarters/radio/lab)
 "ltf" = (
 /obj/table/reinforced/auto,
@@ -39833,7 +39886,9 @@
 	pixel_x = -4;
 	pixel_y = 6
 	},
-/turf/simulated/floor/darkblue/checker,
+/turf/simulated/floor/wood{
+	icon_state = "wooden"
+	},
 /area/station/crew_quarters/radio/lab)
 "mfj" = (
 /obj/machinery/light{
@@ -41472,7 +41527,9 @@
 	pixel_x = 9;
 	pixel_y = 1
 	},
-/turf/simulated/floor/darkblue/checker,
+/turf/simulated/floor/wood{
+	icon_state = "wooden"
+	},
 /area/station/crew_quarters/radio/lab)
 "mDy" = (
 /obj/machinery/disposal,
@@ -44850,6 +44907,7 @@
 	},
 /obj/access_spawn/cargo,
 /obj/firedoor_spawn,
+/obj/item/stamp,
 /turf/simulated/floor/yellow,
 /area/station/quartermaster/office)
 "nDX" = (
@@ -44926,7 +44984,9 @@
 	dir = 8;
 	pixel_x = -24
 	},
-/turf/simulated/floor/darkblue/checker,
+/turf/simulated/floor/wood{
+	icon_state = "wooden"
+	},
 /area/station/crew_quarters/radio/lab)
 "nFR" = (
 /obj/disposalpipe/segment/transport{
@@ -45829,6 +45889,13 @@
 /obj/machinery/vending/security_ammo,
 /turf/simulated/floor/black,
 /area/station/ai_monitored/armory)
+"nTy" = (
+/obj/decal/tile_edge/line/blue{
+	dir = 9;
+	icon_state = "line1"
+	},
+/turf/simulated/floor/darkblue/checker,
+/area/station/crew_quarters/radio/lab)
 "nTE" = (
 /obj/table/reinforced/auto,
 /obj/disposalpipe/segment/transport{
@@ -52680,6 +52747,10 @@
 /obj/stool/chair/office{
 	dir = 8
 	},
+/obj/decal/tile_edge/line/blue{
+	dir = 9;
+	icon_state = "line2"
+	},
 /turf/simulated/floor/darkblue/checker,
 /area/station/crew_quarters/radio/lab)
 "pVU" = (
@@ -56070,11 +56141,12 @@
 	},
 /area/station/crew_quarters/cafeteria)
 "qYg" = (
-/obj/machinery/computer/announcement{
-	announces_arrivals = 1;
-	dir = 8
-	},
 /obj/machinery/light_switch/east,
+/obj/machinery/computer/announcement{
+	dir = 8;
+	name = "QM Announcement Computer";
+	req_access_txt = "31"
+	},
 /turf/simulated/floor/yellowblack{
 	dir = 4
 	},
@@ -56846,6 +56918,10 @@
 /obj/decal/cleanable/dirt/jen,
 /turf/simulated/floor/plating/jen,
 /area/station/maintenance/inner/nw)
+"rma" = (
+/obj/decal/poster/wallsign/fuck2,
+/turf/simulated/wall/auto/jen,
+/area/station/hallway/primary/east)
 "rme" = (
 /obj/machinery/atmospherics/pipe/simple/insulated{
 	can_rupture = 0;
@@ -59337,7 +59413,9 @@
 /obj/cable{
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/darkblue/checker,
+/turf/simulated/floor/wood{
+	icon_state = "wooden"
+	},
 /area/station/crew_quarters/radio/lab)
 "rYs" = (
 /turf/simulated/floor/white/checker2{
@@ -62133,7 +62211,9 @@
 	pixel_w = -1
 	},
 /obj/disposalpipe/segment,
-/turf/simulated/floor/darkblue/checker,
+/turf/simulated/floor/wood{
+	icon_state = "wooden"
+	},
 /area/station/crew_quarters/radio/lab)
 "sOG" = (
 /obj/disposalpipe/segment/produce{
@@ -63969,7 +64049,7 @@
 /area/station/crew_quarters/cafeteria)
 "tnF" = (
 /obj/decal/fakeobjects/vacuumtape,
-/turf/simulated/floor/darkblue/checker,
+/turf/simulated/floor/circuit,
 /area/station/crew_quarters/radio/lab)
 "tnK" = (
 /obj/rack,
@@ -67378,7 +67458,11 @@
 /area/station/hallway/secondary/construction)
 "utg" = (
 /obj/decal/fakeobjects/operatorconsole,
-/turf/simulated/floor/darkblue/checker,
+/obj/decal/tile_edge/line/blue{
+	dir = 8;
+	icon_state = "line1"
+	},
+/turf/simulated/floor/circuit,
 /area/station/crew_quarters/radio/lab)
 "uth" = (
 /obj/decal/cleanable/dirt/jen,
@@ -71155,6 +71239,13 @@
 	},
 /turf/simulated/floor/plating/jen,
 /area/station/quartermaster/office)
+"vCL" = (
+/obj/decal/tile_edge/line/blue{
+	dir = 8;
+	icon_state = "line1"
+	},
+/turf/simulated/floor/darkblue/checker,
+/area/station/crew_quarters/radio/lab)
 "vCM" = (
 /obj/cable{
 	icon_state = "2-8"
@@ -71976,10 +72067,6 @@
 	},
 /turf/simulated/floor/wood/six,
 /area/station/library)
-"vSb" = (
-/obj/decal/poster/wallsign/fuck2,
-/turf/simulated/wall/auto/jen,
-/area/station/crew_quarters/radio/lab)
 "vSq" = (
 /obj/table/nanotrasen/auto,
 /obj/item/decoration/flower_vase{
@@ -72083,6 +72170,11 @@
 	name = "test chamber plating"
 	},
 /area/station/science/testchamber)
+"vTV" = (
+/turf/simulated/floor/wood{
+	icon_state = "wooden"
+	},
+/area/station/crew_quarters/radio/lab)
 "vUb" = (
 /obj/machinery/vending/cola/red,
 /turf/simulated/floor/neutral/side{
@@ -72119,7 +72211,9 @@
 	pixel_w = -1
 	},
 /obj/machinery/phone,
-/turf/simulated/floor/darkblue/checker,
+/turf/simulated/floor/wood{
+	icon_state = "wooden"
+	},
 /area/station/crew_quarters/radio/lab)
 "vUz" = (
 /obj/storage/secure/closet/security/equipment,
@@ -72430,6 +72524,10 @@
 	dir = 8
 	},
 /obj/access_spawn,
+/obj/decal/tile_edge/line/blue{
+	dir = 9;
+	icon_state = "line1"
+	},
 /turf/simulated/floor/darkblue/checker,
 /area/station/crew_quarters/radio/lab)
 "vYE" = (
@@ -72887,7 +72985,9 @@
 	dir = 1;
 	pixel_y = 21
 	},
-/turf/simulated/floor/darkblue/checker,
+/turf/simulated/floor/wood{
+	icon_state = "wooden"
+	},
 /area/station/crew_quarters/radio/lab)
 "weY" = (
 /obj/machinery/light{
@@ -73892,6 +73992,11 @@
 	},
 /obj/access_spawn/cargo,
 /obj/firedoor_spawn,
+/obj/item/pen/marker/green,
+/obj/item/pen/marker/red{
+	pixel_x = 4;
+	pixel_y = 5
+	},
 /turf/simulated/floor/yellow,
 /area/station/quartermaster/office)
 "wuf" = (
@@ -75482,6 +75587,13 @@
 	},
 /turf/space,
 /area/space)
+"wQD" = (
+/obj/decal/tile_edge/line/blue{
+	dir = 1;
+	icon_state = "line1"
+	},
+/turf/simulated/floor/darkblue/checker,
+/area/station/crew_quarters/radio/lab)
 "wQH" = (
 /turf/simulated/wall/auto/jen,
 /area/station/hallway/primary/southwest)
@@ -76512,7 +76624,7 @@
 "xez" = (
 /obj/decal/fakeobjects/operatorconsole,
 /obj/disposalpipe/segment,
-/turf/simulated/floor/darkblue/checker,
+/turf/simulated/floor/circuit,
 /area/station/crew_quarters/radio/lab)
 "xeE" = (
 /obj/decal/tile_edge/line/blue{
@@ -119212,10 +119324,10 @@ qiT
 aBX
 bkq
 weN
-fnH
-rgd
+vTV
+lpk
 vUx
-fnH
+wQD
 fnH
 fnH
 ejI
@@ -119514,7 +119626,7 @@ kke
 cVv
 rsV
 sOF
-oqj
+iPu
 eXA
 mfe
 eQH
@@ -119816,7 +119928,7 @@ glb
 wml
 rsV
 hTB
-oqj
+iPu
 rYo
 gev
 eQH
@@ -120121,7 +120233,7 @@ hqb
 mDl
 eyl
 beg
-fnH
+wQD
 fnH
 pey
 mys
@@ -120422,8 +120534,8 @@ bkq
 utg
 pVS
 itQ
-fnH
-fnH
+vCL
+nTy
 fnH
 bnZ
 eUV
@@ -120722,7 +120834,7 @@ qiT
 sAB
 bkq
 tnF
-fnH
+wQD
 rgd
 fnH
 fnH
@@ -121024,7 +121136,7 @@ kzF
 pSo
 rsV
 xez
-oqj
+jqY
 qZo
 oqj
 oAV
@@ -121331,7 +121443,7 @@ iNS
 eXR
 bkq
 bkq
-vSb
+bkq
 mys
 vBg
 vWh
@@ -144052,7 +144164,7 @@ kMG
 iJn
 iJn
 qhT
-deA
+rma
 cyU
 cyU
 usu
