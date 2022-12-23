@@ -129,12 +129,15 @@
 /turf/simulated/floor/yellowblack/corner,
 /area/station/hangar/qm)
 "acE" = (
-/obj/stool/chair/red{
-	dir = 8
-	},
+/obj/table/auto,
 /obj/machinery/light{
 	dir = 4;
 	pixel_x = 10
+	},
+/obj/item/kitchen/food_box/donut_box,
+/obj/item/robodefibrillator{
+	pixel_x = 5;
+	pixel_y = 15
 	},
 /turf/simulated/floor/white,
 /area/station/medical/medbay)
@@ -9823,6 +9826,7 @@
 "cQX" = (
 /obj/table/wood/round/auto,
 /obj/machinery/phone,
+/obj/machinery/light/emergency,
 /turf/simulated/floor/darkblue,
 /area/station/bridge)
 "cRm" = (
@@ -12786,7 +12790,7 @@
 /turf/simulated/floor/redblack/corner,
 /area/station/hallway/primary/northeast)
 "dLm" = (
-/obj/storage/secure/closet/medical/medkit,
+/obj/storage/secure/closet/medical/medicine,
 /obj/machinery/light_switch/north,
 /turf/simulated/floor/blue/checker,
 /area/station/medical/medbay)
@@ -16454,6 +16458,24 @@
 	},
 /turf/simulated/floor/engine,
 /area/station/engine/core)
+"eRH" = (
+/obj/table/auto,
+/obj/machinery/light{
+	dir = 4;
+	pixel_x = 10
+	},
+/obj/item/storage/firstaid/brute{
+	pixel_x = -6;
+	pixel_y = 12
+	},
+/obj/item/storage/firstaid/brute{
+	pixel_x = 8;
+	pixel_y = 12
+	},
+/obj/item/reagent_containers/glass/beaker/large/burn,
+/obj/item/reagent_containers/hypospray,
+/turf/simulated/floor/white,
+/area/station/medical/medbay)
 "eRM" = (
 /obj/machinery/atmospherics/portables_connector{
 	name = "Mixing Port"
@@ -27015,7 +27037,7 @@
 /obj/storage/closet,
 /obj/machinery/light/small{
 	dir = 1;
-	status = 2
+	pixel_y = 21
 	},
 /turf/simulated/floor/carpet/arcade,
 /area/station/crew_quarters/market)
@@ -27125,9 +27147,7 @@
 /turf/simulated/floor/plating,
 /area/shuttle/escape/station)
 "ikv" = (
-/obj/stool/chair{
-	dir = 4
-	},
+/obj/machinery/vending/medical_public,
 /obj/machinery/light/small/floor,
 /turf/simulated/floor/blue/checker{
 	dir = 4
@@ -29244,7 +29264,7 @@
 /obj/storage/closet,
 /obj/machinery/light/small{
 	dir = 1;
-	status = 2
+	pixel_y = 21
 	},
 /turf/simulated/floor/wood{
 	icon_state = "wooden"
@@ -33981,6 +34001,12 @@
 /obj/decal/cleanable/dirt/jen,
 /turf/simulated/floor/plating/jen,
 /area/station/maintenance/inner/east)
+"koE" = (
+/obj/machinery/light/emergency{
+	dir = 1
+	},
+/turf/simulated/floor/black,
+/area/station/bridge)
 "koI" = (
 /obj/cable{
 	icon_state = "4-8"
@@ -35536,6 +35562,16 @@
 	},
 /turf/simulated/floor/plating,
 /area/station/science/teleporter)
+"kMh" = (
+/obj/table/auto,
+/obj/item/reagent_containers/glass/beaker/large/antitox{
+	pixel_x = 1;
+	pixel_y = 11
+	},
+/obj/item/reagent_containers/glass/beaker/large/epinephrine,
+/obj/item/reagent_containers/hypospray,
+/turf/simulated/floor/white,
+/area/station/medical/medbay)
 "kMl" = (
 /obj/machinery/sim/vr_bed{
 	dir = 8;
@@ -35689,6 +35725,7 @@
 /obj/table/wood/round/auto,
 /obj/item/reagent_containers/food/snacks/ramen_bowl,
 /obj/item/kitchen/chopsticks_package,
+/obj/machinery/light/emergency,
 /turf/simulated/floor/darkblue,
 /area/station/bridge)
 "kNL" = (
@@ -36523,6 +36560,15 @@
 	},
 /turf/simulated/wall/auto/reinforced/jen/blue,
 /area/station/medical/robotics)
+"kZN" = (
+/obj/machinery/atmospherics/pipe/simple{
+	dir = 4
+	},
+/obj/machinery/light/emergency{
+	dir = 1
+	},
+/turf/simulated/floor/black,
+/area/station/bridge)
 "kZP" = (
 /obj/table/reinforced/auto,
 /obj/item/paper_bin,
@@ -37075,7 +37121,7 @@
 /turf/simulated/floor/carpet/red/standard/edge/south,
 /area/ghostdrone_factory)
 "liJ" = (
-/obj/stool/bed/moveable,
+/obj/stool/chair/comfy/wheelchair,
 /obj/disposalpipe/segment,
 /obj/machinery/light{
 	dir = 1;
@@ -46703,7 +46749,7 @@
 /turf/simulated/floor/black,
 /area/station/medical/robotics)
 "obl" = (
-/obj/stool/bed/moveable,
+/obj/stool/chair/comfy/wheelchair,
 /obj/machinery/light{
 	dir = 1;
 	pixel_y = 21
@@ -47772,18 +47818,20 @@
 	pixel_x = -3;
 	pixel_y = -1
 	},
-/obj/item/storage/belt/medical{
-	pixel_x = 7;
-	pixel_y = -5
-	},
-/obj/item/storage/belt/medical{
-	pixel_x = 4;
-	pixel_y = -1
-	},
 /obj/machinery/light/small{
 	dir = 1;
 	status = 2
 	},
+/obj/item/clothing/suit/bio_suit/paramedic,
+/obj/item/storage/belt/medical{
+	pixel_x = 4;
+	pixel_y = -1
+	},
+/obj/item/storage/belt/medical{
+	pixel_x = 7;
+	pixel_y = -5
+	},
+/obj/item/storage/belt/medical,
 /turf/simulated/floor/blue/checker,
 /area/station/medical/medbay)
 "orP" = (
@@ -56013,6 +56061,32 @@
 	},
 /turf/simulated/floor/black,
 /area/station/medical/crematorium)
+"qUo" = (
+/obj/table/auto,
+/obj/item/storage/firstaid/toxin{
+	pixel_x = -7;
+	pixel_y = 16
+	},
+/obj/item/storage/firstaid/toxin{
+	pixel_x = 7;
+	pixel_y = 16
+	},
+/obj/item/storage/firstaid/oxygen{
+	pixel_x = -7;
+	pixel_y = 8
+	},
+/obj/item/storage/firstaid/oxygen{
+	pixel_x = -7
+	},
+/obj/item/storage/firstaid/regular{
+	pixel_x = 7;
+	pixel_y = 8
+	},
+/obj/item/storage/firstaid/regular{
+	pixel_x = 7
+	},
+/turf/simulated/floor/white,
+/area/station/medical/medbay)
 "qUu" = (
 /obj/decal/woodclutter,
 /obj/item/plank,
@@ -58684,14 +58758,14 @@
 	name = "Penguinary"
 	})
 "rHO" = (
-/obj/stool/chair/comfy/wheelchair{
-	dir = 4
-	},
 /obj/machinery/door_control{
 	id = "medbay_front";
 	name = "Medbay Door Control";
 	pixel_x = -23;
 	pixel_y = 8
+	},
+/obj/machinery/sleeper/compact{
+	dir = 8
 	},
 /turf/simulated/floor/bluewhite{
 	dir = 10
@@ -65426,6 +65500,20 @@
 /obj/wingrille_spawn/auto/reinforced,
 /turf/simulated/floor/plating,
 /area/station/crewquarters/cryotron)
+"tHE" = (
+/obj/table/auto,
+/obj/item/storage/firstaid/fire{
+	pixel_x = -6;
+	pixel_y = 13
+	},
+/obj/item/storage/firstaid/fire{
+	pixel_x = 8;
+	pixel_y = 13
+	},
+/obj/item/reagent_containers/glass/beaker/large/burn,
+/obj/item/reagent_containers/hypospray,
+/turf/simulated/floor/white,
+/area/station/medical/medbay)
 "tHK" = (
 /obj/machinery/shower{
 	dir = 4
@@ -66856,6 +66944,7 @@
 /obj/machinery/door/airlock/pyro/safe,
 /obj/access_spawn/hydro,
 /obj/decal/cleanable/dirt/jen,
+/obj/firedoor_spawn,
 /turf/simulated/floor/plating/jen,
 /area/station/hydroponics/bay)
 "ugT" = (
@@ -68985,7 +69074,9 @@
 /area/station/engine/ptl)
 "uPa" = (
 /obj/table/auto,
-/obj/random_item_spawner/medicine,
+/obj/item/storage/box/health_upgrade_kit,
+/obj/item/bandage,
+/obj/item/bandage,
 /turf/simulated/floor/bluewhite,
 /area/station/medical/medbay)
 "uPi" = (
@@ -117253,10 +117344,10 @@ oXX
 gMY
 pOr
 oEJ
-acE
-jEF
-jEF
-jEF
+eRH
+tHE
+qUo
+kMh
 acE
 uLK
 uTJ
@@ -134673,7 +134764,7 @@ kyZ
 kyZ
 ykS
 qNk
-iyj
+koE
 iyj
 uHr
 rDe
@@ -137089,7 +137180,7 @@ pPV
 pPV
 tij
 qNk
-qzN
+kZN
 nzm
 uHr
 cUZ
