@@ -1876,6 +1876,20 @@
 /area/station/crew_quarters/arcade{
 	name = "Arts Room"
 	})
+"aAh" = (
+/obj/wingrille_spawn/auto/crystal/reinforced,
+/obj/machinery/door/poddoor/blast{
+	density = 0;
+	dir = 4;
+	doordir = "right";
+	icon_state = "bdoorright0";
+	id = "scienceteleporter";
+	layer = 4;
+	name = "Teleporter Blast Shield";
+	opacity = 0
+	},
+/turf/simulated/floor/plating,
+/area/station/science/teleporter)
 "aAl" = (
 /obj/cable{
 	icon_state = "1-8"
@@ -3338,6 +3352,15 @@
 	},
 /obj/cable{
 	icon_state = "0-8"
+	},
+/obj/machinery/door/poddoor/blast{
+	density = 0;
+	dir = 4;
+	icon_state = "bdoormid0";
+	id = "scienceteleporter";
+	layer = 4;
+	name = "Teleporter Blast Shield";
+	opacity = 0
 	},
 /turf/simulated/floor/delivery,
 /area/station/science/teleporter)
@@ -4929,6 +4952,14 @@
 /obj/cable{
 	icon_state = "0-2"
 	},
+/obj/machinery/door/poddoor/blast{
+	dir = 1;
+	doordir = "left";
+	icon_state = "bdoorleft1";
+	id = "scienceteleporter2";
+	layer = 4;
+	name = "Teleporter Blast Shield"
+	},
 /turf/simulated/floor/plating,
 /area/station/science/teleporter)
 "byW" = (
@@ -5961,9 +5992,7 @@
 /obj/machinery/door/airlock/pyro/glass,
 /obj/access_spawn,
 /obj/firedoor_spawn,
-/turf/simulated/floor/neutral/side{
-	dir = 8
-	},
+/turf/simulated/floor/delivery,
 /area/station/hallway/primary/north)
 "bMt" = (
 /obj/disposalpipe/segment/mail{
@@ -16472,7 +16501,7 @@
 	pixel_x = 8;
 	pixel_y = 12
 	},
-/obj/item/reagent_containers/glass/beaker/large/burn,
+/obj/item/reagent_containers/glass/beaker/large/brute,
 /obj/item/reagent_containers/hypospray,
 /turf/simulated/floor/white,
 /area/station/medical/medbay)
@@ -16614,6 +16643,14 @@
 "eTZ" = (
 /obj/wingrille_spawn/auto/crystal/reinforced,
 /obj/cable,
+/obj/machinery/door/poddoor/blast{
+	dir = 1;
+	doordir = "right";
+	icon_state = "bdoorright1";
+	id = "scienceteleporter2";
+	layer = 4;
+	name = "Teleporter Blast Shield"
+	},
 /turf/simulated/floor/plating,
 /area/station/science/teleporter)
 "eUd" = (
@@ -18131,6 +18168,19 @@
 /obj/machinery/vending/medical_public,
 /turf/simulated/floor/green/side,
 /area/station/bridge/customs)
+"ftN" = (
+/obj/wingrille_spawn/auto/crystal/reinforced,
+/obj/machinery/door/poddoor/blast{
+	density = 0;
+	dir = 4;
+	icon_state = "bdoormid0";
+	id = "scienceteleporter";
+	layer = 4;
+	name = "Teleporter Blast Shield";
+	opacity = 0
+	},
+/turf/simulated/floor/plating,
+/area/station/science/teleporter)
 "ftQ" = (
 /obj/cable{
 	icon_state = "4-8"
@@ -30990,6 +31040,16 @@
 /obj/cable{
 	icon_state = "0-4"
 	},
+/obj/machinery/door/poddoor/blast{
+	density = 0;
+	dir = 4;
+	doordir = "left";
+	icon_state = "bdoorleft0";
+	id = "scienceteleporter";
+	layer = 4;
+	name = "Teleporter Blast Shield";
+	opacity = 0
+	},
 /turf/simulated/floor/plating,
 /area/station/science/teleporter)
 "jsU" = (
@@ -31699,6 +31759,16 @@
 /area/station/maintenance/outer/west)
 "jEJ" = (
 /obj/wingrille_spawn/auto/crystal/reinforced,
+/obj/machinery/door/poddoor/blast{
+	density = 0;
+	dir = 4;
+	doordir = "left";
+	icon_state = "bdoorleft0";
+	id = "scienceteleporter";
+	layer = 4;
+	name = "Teleporter Blast Shield";
+	opacity = 0
+	},
 /turf/simulated/floor/plating,
 /area/station/science/teleporter)
 "jEK" = (
@@ -33718,6 +33788,24 @@
 	},
 /turf/simulated/floor/wood/seven,
 /area/station/crew_quarters/fitness)
+"kiB" = (
+/obj/decal/cleanable/dirt/jen,
+/obj/storage/crate/internals,
+/obj/item/clothing/head/emerg{
+	pixel_x = 1;
+	pixel_y = 10
+	},
+/obj/item/clothing/suit/space/emerg{
+	pixel_x = 4;
+	pixel_y = -4
+	},
+/obj/item/tank/air{
+	pixel_x = -6;
+	pixel_y = 4
+	},
+/obj/item/clothing/mask/breath,
+/turf/simulated/floor/plating/jen,
+/area/station/maintenance/outer/sw)
 "kiO" = (
 /obj/decoration/clock{
 	pixel_y = 32
@@ -40176,6 +40264,7 @@
 "mhk" = (
 /obj/table/auto,
 /obj/machinery/light/small/floor,
+/obj/random_item_spawner/hat/one,
 /turf/simulated/floor/yellowblack,
 /area/station/hangar/qm)
 "mhD" = (
@@ -48177,6 +48266,12 @@
 /obj/cable{
 	icon_state = "0-2"
 	},
+/obj/machinery/door/poddoor/blast{
+	dir = 1;
+	id = "scienceteleporter2";
+	layer = 4;
+	name = "Teleporter Blast Shield"
+	},
 /turf/simulated/floor/delivery,
 /area/station/science/teleporter)
 "oxA" = (
@@ -49336,6 +49431,15 @@
 	},
 /obj/cable{
 	icon_state = "0-8"
+	},
+/obj/machinery/door/poddoor/blast{
+	density = 0;
+	dir = 4;
+	icon_state = "bdoormid0";
+	id = "scienceteleporter";
+	layer = 4;
+	name = "Teleporter Blast Shield";
+	opacity = 0
 	},
 /turf/simulated/floor/plating,
 /area/station/science/teleporter)
@@ -53125,15 +53229,16 @@
 	dir = 1;
 	pixel_y = 21
 	},
+/obj/machinery/disposal/mail/small/autoname/public/podbay/west,
+/obj/disposalpipe/trunk/mail{
+	dir = 4
+	},
 /obj/machinery/camera{
 	c_tag = "autotag";
 	dir = 6;
 	name = "autoname - SS13";
+	pixel_y = 20;
 	tag = ""
-	},
-/obj/machinery/disposal/mail/small/autoname/public/podbay/west,
-/obj/disposalpipe/trunk/mail{
-	dir = 4
 	},
 /turf/simulated/floor/orangeblack/side{
 	dir = 5
@@ -55113,6 +55218,12 @@
 /obj/warp_beacon/mining,
 /turf/space,
 /area/space)
+"qCr" = (
+/obj/table/auto,
+/obj/machinery/light/small/floor,
+/obj/random_item_spawner/desk_stuff/one,
+/turf/simulated/floor/yellowblack,
+/area/station/hangar/qm)
 "qCs" = (
 /obj/disposalpipe/segment/morgue{
 	dir = 4;
@@ -55821,6 +55932,18 @@
 /obj/machinery/light{
 	dir = 4;
 	tag = ""
+	},
+/obj/machinery/door_control{
+	id = "scienceteleporter";
+	name = "Pad Control-Access Lockdown";
+	pixel_x = 24;
+	pixel_y = 8
+	},
+/obj/machinery/door_control{
+	id = "scienceteleporter2";
+	name = "Pad Public-Access Lockdown";
+	pixel_x = 24;
+	pixel_y = -8
 	},
 /turf/simulated/floor/purpleblack{
 	dir = 4
@@ -58145,6 +58268,7 @@
 	pixel_x = -6;
 	pixel_y = 4
 	},
+/obj/item/clothing/mask/breath,
 /turf/simulated/floor/plating/jen,
 /area/station/hallway/secondary/exit)
 "ryb" = (
@@ -58557,9 +58681,7 @@
 	icon_state = "1-2"
 	},
 /obj/firedoor_spawn,
-/turf/simulated/floor/yellow/side{
-	dir = 4
-	},
+/turf/simulated/floor/delivery,
 /area/station/hallway/primary/north)
 "rEz" = (
 /obj/disposalpipe/segment/mail{
@@ -66020,6 +66142,18 @@
 	dir = 8
 	},
 /area/station/security/main)
+"tPX" = (
+/obj/table/auto,
+/obj/item/kitchen/utensil/fork{
+	dir = 8;
+	pixel_x = 3;
+	pixel_y = 13
+	},
+/obj/item/kitchen/utensil/spoon{
+	pixel_x = 3
+	},
+/turf/simulated/floor/yellow/checker,
+/area/station/engine/engineering/breakroom)
 "tQf" = (
 /obj/machinery/computer/security/wooden_tv,
 /obj/item/clothing/head/fedora{
@@ -66596,6 +66730,7 @@
 /obj/decal/mule/beacon,
 /obj/item/clothing/glasses/meson,
 /obj/item/clothing/glasses/meson,
+/obj/item/wrench,
 /turf/simulated/floor/redblack{
 	dir = 1
 	},
@@ -70710,6 +70845,16 @@
 	},
 /obj/cable{
 	icon_state = "0-8"
+	},
+/obj/machinery/door/poddoor/blast{
+	density = 0;
+	dir = 4;
+	doordir = "right";
+	icon_state = "bdoorright0";
+	id = "scienceteleporter";
+	layer = 4;
+	name = "Teleporter Blast Shield";
+	opacity = 0
 	},
 /turf/simulated/floor/plating,
 /area/station/science/teleporter)
@@ -75398,6 +75543,12 @@
 "wGB" = (
 /obj/storage/secure/closet/fridge,
 /obj/disposalpipe/segment,
+/obj/item/reagent_containers/food/snacks/tandoorichicken,
+/obj/item/reagent_containers/food/snacks/toastbacon,
+/obj/item/reagent_containers/food/snacks/yoghurt/frozen,
+/obj/item/reagent_containers/food/snacks/friedrice,
+/obj/item/reagent_containers/food/snacks/ice_cream/goodrandom,
+/obj/item/reagent_containers/food/snacks/ice_cream/goodrandom,
 /turf/simulated/floor/yellow/checker,
 /area/station/engine/engineering/breakroom)
 "wGF" = (
@@ -75712,6 +75863,10 @@
 	dir = 9;
 	name = "autoname - SS13";
 	tag = ""
+	},
+/obj/drink_rack/mug{
+	pixel_x = 29;
+	pixel_y = 5
 	},
 /turf/simulated/floor/yellow/checker,
 /area/station/engine/engineering/breakroom)
@@ -113973,7 +114128,7 @@ aZL
 ilV
 etl
 fMS
-jEJ
+ftN
 igX
 sVP
 kXh
@@ -114275,7 +114430,7 @@ vpe
 bIC
 jie
 uVR
-jEJ
+aAh
 oDa
 sVP
 woh
@@ -116642,7 +116797,7 @@ onx
 cKq
 rgV
 bKd
-mhk
+qCr
 bxk
 qfa
 diZ
@@ -123405,7 +123560,7 @@ wQH
 qqH
 bcW
 lIz
-lIz
+qEL
 aUj
 diZ
 diZ
@@ -123707,7 +123862,7 @@ wQH
 kxp
 rYk
 lIz
-qEL
+kiB
 fKw
 diZ
 diZ
@@ -123926,7 +124081,7 @@ hHO
 vpD
 eoo
 rRm
-rog
+tPX
 cLu
 aJt
 uNV
