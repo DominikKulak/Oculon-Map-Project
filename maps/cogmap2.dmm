@@ -62912,8 +62912,9 @@
 "sRE" = (
 /obj/machinery/power/apc/autoname_south,
 /obj/cable{
-	icon_state = "1-2"
+	icon_state = "0-2"
 	},
+/obj/cable,
 /turf/simulated/wall/auto/reinforced/jen/blue,
 /area/station/turret_protected/AIbaseoutside)
 "sSb" = (
@@ -73116,6 +73117,9 @@
 /obj/cable{
 	icon_state = "2-8"
 	},
+/obj/cable{
+	icon_state = "1-2"
+	},
 /turf/simulated/floor/black,
 /area/station/bridge)
 "vZH" = (
@@ -74346,7 +74350,7 @@
 	level = -1
 	},
 /turf/simulated/floor/wood,
-/area/station/crew_quarters/kitchen)
+/area/station/crew_quarters/cafeteria)
 "wsw" = (
 /obj/machinery/door/airlock/pyro/external{
 	dir = 4
