@@ -2405,17 +2405,6 @@
 /obj/stool/chair/office/red{
 	dir = 4
 	},
-/obj/machinery/light/small{
-	dir = 8;
-	pixel_x = -12
-	},
-/obj/machinery/camera{
-	c_tag = "autotag";
-	dir = 4;
-	name = "autoname - SS13";
-	pixel_x = -10;
-	tag = ""
-	},
 /turf/simulated/floor/wood/seven,
 /area/station/security/hos)
 "aIz" = (
@@ -47110,6 +47099,22 @@
 /obj/random_item_spawner/tableware/one,
 /turf/simulated/floor/wood,
 /area/station/crew_quarters/cafeteria)
+"oeJ" = (
+/obj/decal/tile_edge/line/black{
+	dir = 1;
+	icon_state = "line1";
+	tag = "icon-line1 (NORTH)"
+	},
+/obj/table/reinforced/bar/auto{
+	name = "table"
+	},
+/obj/item/paper_bin,
+/obj/item/pen/fancy,
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/simulated/floor/wood/seven,
+/area/station/security/hos)
 "oeL" = (
 /obj/decal/tile_edge/floorguide/evac{
 	dir = 4
@@ -64950,6 +64955,23 @@
 /obj/grille/steel,
 /turf/space,
 /area/space)
+"twU" = (
+/obj/machinery/camera{
+	c_tag = "autotag";
+	dir = 4;
+	name = "autoname - SS13";
+	pixel_x = -10;
+	tag = ""
+	},
+/obj/table/reinforced/bar/auto{
+	name = "table"
+	},
+/obj/item/decoration/flower_vase{
+	pixel_x = -5;
+	pixel_y = 13
+	},
+/turf/simulated/floor/wood/seven,
+/area/station/security/hos)
 "twV" = (
 /obj/random_item_spawner/junk/one_or_zero,
 /obj/decal/cleanable/dirt/jen,
@@ -67081,7 +67103,7 @@
 /obj/access_spawn/hydro,
 /obj/decal/cleanable/dirt/jen,
 /obj/firedoor_spawn,
-/turf/simulated/floor/plating/jen,
+/turf/simulated/floor/delivery,
 /area/station/hydroponics/bay)
 "ugT" = (
 /obj/machinery/vending/alcohol,
@@ -143717,8 +143739,8 @@ jnU
 iRR
 wPV
 utZ
-utZ
-utZ
+oeJ
+twU
 mLZ
 wCE
 aql
