@@ -1,3 +1,8 @@
+TYPEINFO(/obj)
+	/// Either a number or a list of the form list("MET-1"=5, "erebite"=3)
+	/// See the `match_material_pattern` proc for an explanation of what "CRY-2" is supposed to mean
+	var/list/mats = 0
+
 /obj
 	var/real_name = null
 	var/real_desc = null
@@ -8,11 +13,10 @@
 	var/adaptable = 0
 
 	var/is_syndicate = 0
-	var/list/mats = 0 // either a number or a list of the form list("MET-1"=5, "erebite"=3)
 	var/deconstruct_flags = DECON_NONE
 
-	/// If TRUE, this object can't be scanned at all by device analyzers
-	var/mechanics_blacklist = FALSE
+	/// Dictates how this object behaves when scanned with a device analyzer or equivalent - see "_std/defines/mechanics.dm" for docs
+	var/mechanics_interaction = MECHANICS_INTERACTION_ALLOWED
 	/// If defined, device analyzer scans will yield this typepath (instead of the default, which is just the object's type itself)
 	var/mechanics_type_override = null
 	var/artifact = null
@@ -31,11 +35,13 @@
 		if (HAS_FLAG(object_flags, HAS_DIRECTIONAL_BLOCKING))
 			var/turf/T = get_turf(src)
 			T?.UpdateDirBlocks()
-		if (!isnull(src.mats) && src.mats != 0 && !src.mechanics_blacklist)
+		var/typeinfo/obj/typeinfo = src.get_typeinfo()
+		if (typeinfo.mats && !src.mechanics_interaction != MECHANICS_INTERACTION_BLACKLISTED)
 			src.AddComponent(/datum/component/analyzable, !isnull(src.mechanics_type_override) ? src.mechanics_type_override : src.type)
 		src.update_access_from_txt()
 
 	Move(NewLoc, direct)
+		if(usr==0) usr = null
 		if (HAS_FLAG(object_flags, HAS_DIRECTIONAL_BLOCKING))
 			var/turf/old_loc = get_turf(src)
 			. = ..()
@@ -101,13 +107,13 @@
 	ex_act(severity)
 		src.material?.triggerExp(src, severity)
 		switch(severity)
-			if(1.0)
+			if(1)
 				changeHealth(-100)
 				return
-			if(2.0)
+			if(2)
 				changeHealth(-70)
 				return
-			if(3.0)
+			if(3)
 				changeHealth(-40)
 				return
 			else
@@ -128,7 +134,6 @@
 		for(var/mob/M in src.contents)
 			M.set_loc(src.loc)
 		tag = null
-		mats = null
 		if (artifact && !isnum(artifact))
 			qdel(artifact)
 			artifact = null
@@ -178,7 +183,7 @@
 		O.alpha = alpha
 		O.anchored = anchored
 		O.set_density(density)
-		O.opacity = opacity
+		O.set_opacity(opacity)
 		if (material)
 			O.setMaterial(material)
 		O.transform = transform
@@ -207,7 +212,7 @@
 		else
 			return null
 
-	proc/handle_internal_lifeform(mob/lifeform_inside_me, breath_request)
+	proc/handle_internal_lifeform(mob/lifeform_inside_me, breath_request, mult)
 		//Return: (NONSTANDARD)
 		//		null if object handles breathing logic for lifeform
 		//		datum/air_group to tell lifeform to process using that breath return
@@ -215,10 +220,10 @@
 		if (breath_request>0)
 			var/datum/gas_mixture/environment = return_air()
 			if (environment)
-				var/breath_moles = TOTAL_MOLES(environment)*BREATH_PERCENTAGE
+				var/breath_moles = TOTAL_MOLES(environment)*BREATH_PERCENTAGE*mult
 				return remove_air(breath_moles)
 			else
-				return remove_air(breath_request)
+				return remove_air(breath_request * mult)
 		else
 			return null
 
@@ -277,8 +282,8 @@
 	icon = 'icons/obj/items/items.dmi'
 	icon_state = "bedbin"
 	deconstruct_flags = DECON_SCREWDRIVER | DECON_WRENCH
-	var/amount = 23.0
-	anchored = 1.0
+	var/amount = 23
+	anchored = ANCHORED
 
 	attackby(obj/item/W, mob/user)
 		if (istype(W, /obj/item/clothing/suit/bedsheet))
@@ -305,8 +310,8 @@
 	icon = 'icons/obj/items/items.dmi'
 	icon_state = "bedbin"
 	deconstruct_flags = DECON_SCREWDRIVER | DECON_WRENCH
-	var/amount = 23.0
-	anchored = 1.0
+	var/amount = 23
+	anchored = ANCHORED
 
 	attackby(obj/item/W, mob/user)
 		if (istype(W, /obj/item/clothing/under/towel))
@@ -335,7 +340,7 @@
 	icon_state = "lattice"
 	density = 0
 	stops_space_move = 1
-	anchored = 1.0
+	anchored = ANCHORED
 	layer = LATTICE_LAYER
 	plane = PLANE_FLOOR
 	//	flags = CONDUCT
@@ -349,23 +354,42 @@
 	ex_act(severity)
 		src.material?.triggerExp(src, severity)
 		switch(severity)
-			if(1.0)
+			if(1)
 				qdel(src)
 				return
-			if(2.0)
+			if(2)
 				qdel(src)
 				return
-			if(3.0)
+			if(3)
 				return
 			else
 
+	proc/replace_with_catwalk(var/obj/item/rods/rods)
+		var/turf/simulated/floor/airless/plating/catwalk/auto/T = get_turf(src.loc)
+		T.ReplaceWith(/turf/simulated/floor/airless/plating/catwalk/auto, keep_old_material = 0, handle_dir = 1)
+		T.MakeCatwalk(rods)
+		qdel(src)
+
 	attackby(obj/item/C, mob/user)
+		if (istype(C, /obj/item/rods))
+			var/actionbar_duration = 2 SECOND
+
+			if (ishuman(user))
+				if (user.traitHolder.hasTrait("training_engineer"))
+					src.replace_with_catwalk(C)
+					return // Engineers can bypass the actionbar and instantly put down catwalks.
+
+				if (user.traitHolder.hasTrait("carpenter"))
+					actionbar_duration /= 2
+
+			user.show_text("You start putting the rods together and making a catwalk...", "blue")
+			SETUP_GENERIC_ACTIONBAR(user, src, actionbar_duration, /obj/lattice/proc/replace_with_catwalk, list(C), C.icon, C.icon_state, null, null)
 
 		if (istype(C, /obj/item/tile))
 			var/obj/item/tile/T = C
 			if (T.amount >= 1)
 				T.build(get_turf(src))
-				playsound(src.loc, "sound/impact_sounds/Generic_Stab_1.ogg", 50, 1)
+				playsound(src.loc, 'sound/impact_sounds/Generic_Stab_1.ogg', 50, 1)
 				T.add_fingerprint(user)
 				qdel(src)
 			return
@@ -373,12 +397,6 @@
 			boutput(user, "<span class='notice'>Slicing lattice joints ...</span>")
 			new /obj/item/rods/steel(src.loc)
 			qdel(src)
-		if (istype(C, /obj/item/rods))
-			var/obj/item/rods/R = C
-			if (R.change_stack_amount(-2))
-				boutput(user, "<span class='notice'>You assemble a barricade from the lattice and rods.</span>")
-				new /obj/lattice/barricade(src.loc)
-				qdel(src)
 		return
 
 /obj/lattice/barricade
@@ -390,7 +408,7 @@
 
 	proc/barricade_damage(var/hitstrength)
 		strength -= hitstrength
-		playsound(src.loc, "sound/impact_sounds/Metal_Hit_Light_1.ogg", 50, 1)
+		playsound(src.loc, 'sound/impact_sounds/Metal_Hit_Light_1.ogg', 50, 1)
 		if (strength < 1)
 			src.visible_message("The barricade breaks!")
 			if (prob(50)) new /obj/item/rods/steel(src.loc)
@@ -428,16 +446,16 @@
 			if (W.force > 8)
 				user.lastattacked = src
 				src.barricade_damage(W.force / 8)
-				playsound(src.loc, "sound/impact_sounds/Metal_Hit_Light_1.ogg", 50, 1)
+				playsound(src.loc, 'sound/impact_sounds/Metal_Hit_Light_1.ogg', 50, 1)
 			..()
 
 	ex_act(severity)
 		switch(severity)
-			if(1.0)
+			if(1)
 				qdel(src)
 				return
-			if(2.0) src.barricade_damage(3)
-			if(3.0) src.barricade_damage(1)
+			if(2) src.barricade_damage(3)
+			if(3) src.barricade_damage(1)
 		return
 
 	blob_act(var/power)
@@ -448,7 +466,8 @@
 
 /obj/overlay
 	name = "overlay"
-	anchored = TRUE
+	anchored = ANCHORED
+	pass_unstable = FALSE
 	mat_changename = 0
 	mat_changedesc = 0
 	event_handler_flags = IMMUNE_MANTA_PUSH
@@ -482,14 +501,7 @@
 
 /obj/projection
 	name = "Projection"
-	anchored = 1.0
-
-/obj/deskclutter
-	name = "desk clutter"
-	icon = 'icons/obj/stationobjs.dmi'
-	icon_state = "deskclutter"
-	desc = "What a mess..."
-	anchored = 1
+	anchored = ANCHORED
 
 /obj/item/mouse_drag_pointer = MOUSE_ACTIVE_POINTER
 
@@ -503,14 +515,14 @@
 	var/obj/O = src
 	if (alert("Are you sure? This will irreversibly replace this object with a copy that gibs the first person trying to touch it!", "Replace with explosive", "Yes", "No") == "Yes")
 		message_admins("[key_name(usr)] replaced [O] ([log_loc(O)]) with an explosive replica.")
-		logTheThing("admin", usr, null, "replaced [O] ([log_loc(O)]) with an explosive replica.")
+		logTheThing(LOG_ADMIN, usr, "replaced [O] ([log_loc(O)]) with an explosive replica.")
 		var/obj/replica = new /obj/item/card/id/captains_spare/explosive(O.loc)
 		replica.icon = O.icon
 		replica.icon_state = O.icon_state
 		replica.name = O.name
 		replica.desc = O.desc
 		replica.set_density(O.density)
-		replica.opacity = O.opacity
+		replica.set_opacity(O.opacity)
 		replica.anchored = O.anchored
 		replica.layer = O.layer - 0.05
 		replica.pixel_x = O.pixel_x
@@ -519,20 +531,21 @@
 		qdel(O)
 
 /obj/proc/place_on(obj/item/W as obj, mob/user as mob, params)
-	. = 0
+	. = FALSE
 	if (W && !issilicon(user)) // no ghost drones should not be able to do this either, not just borgs
-		if (user && !(W.cant_drop))
-			var/dirbuffer //*hmmpf* it's not like im a hacky coder or anything... (＃￣^￣)
-			dirbuffer = W.dir //though actually this will preserve item rotation when placed on tables so they don't rotate when placed. (this is a niche bug with silverware, but I thought I might as well stop it from happening with other things <3)
+		var/dirbuffer //*hmmpf* it's not like im a hacky coder or anything... (＃￣^￣)
+		dirbuffer = W.dir //though actually this will preserve item rotation when placed on tables so they don't rotate when placed. (this is a niche bug with silverware, but I thought I might as well stop it from happening with other things <3)
+		if (user)
+			if (W.cant_drop)
+				return
 			user.drop_item()
-			if(W.dir != dirbuffer)
-				W.set_dir(dirbuffer)
-			if (W?.loc)
-				W.set_loc(src.loc)
-				if (islist(params) && params["icon-y"] && params["icon-x"])
-					W.pixel_x = text2num(params["icon-x"]) - 16
-					W.pixel_y = text2num(params["icon-y"]) - 16
-				. = 1
+		if(W.dir != dirbuffer)
+			W.set_dir(dirbuffer)
+		W.set_loc(src.loc)
+		if (islist(params) && params["icon-y"] && params["icon-x"])
+			W.pixel_x = text2num(params["icon-x"]) - 16
+			W.pixel_y = text2num(params["icon-y"]) - 16
+		. = TRUE
 
 /obj/proc/receive_silicon_hotkey(var/mob/user)
 	//A wee stub to handle other objects implementing the AI keys
@@ -547,6 +560,9 @@
 
 	animate_storage_thump(src)
 
+/obj/proc/mob_resist_inside(var/mob/user)
+	return
+
 /obj/hitby(atom/movable/AM, datum/thrown_thing/thr)
 	. = ..()
 	if(!.)
@@ -559,3 +575,8 @@
 			src.throw_at(get_edge_target_turf(src,get_dir(AM, src)), 10, 1)
 		else if(AM.throwforce >= 80 && !isrestrictedz(src.z))
 			src.meteorhit(AM)
+
+/obj/proc/become_mimic()
+	var/mob/living/critter/mimic/replacer = new(get_turf(src.loc))
+	replacer.disguise_as(src)
+	qdel(src)

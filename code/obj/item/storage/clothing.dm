@@ -48,7 +48,7 @@
 	name = "\improper Medical Director's clothing"
 	spawn_contents = list(/obj/item/clothing/under/rank/medical_director,
 	/obj/item/clothing/under/rank/medical_director/dress,
-	/obj/item/clothing/suit/labcoat,
+	/obj/item/clothing/suit/labcoat/medical_director,
 	/obj/item/clothing/head/fancy/rank,
 	/obj/item/clothing/under/rank/medical_director/fancy,
 	/obj/item/clothing/suit/wintercoat/command)
@@ -59,6 +59,7 @@
 	/obj/item/clothing/under/rank/chief_engineer/dress,
 	/obj/item/clothing/head/fancy/rank,
 	/obj/item/clothing/under/rank/chief_engineer/fancy,
+	/obj/item/clothing/under/rank/chief_engineer/scarf,
 	/obj/item/clothing/suit/wintercoat/command)
 
 // Civilian Equipment
@@ -189,8 +190,6 @@
 	name = "\improper Mechanic's equipment"
 	spawn_contents = list(/obj/item/clothing/under/rank/mechanic,\
 	/obj/item/clothing/shoes/black,\
-	/obj/item/device/radio/headset/mechanic,\
-	/obj/item/device/pda2/mechanic,\
 	/obj/item/clothing/under/rank/orangeoveralls/yellow)
 
 /obj/item/storage/box/clothing/engineer
@@ -244,6 +243,7 @@
 
 /obj/item/storage/box/costume
 	icon_state = "costume"
+	in_list_or_max = TRUE
 	can_hold = list(/obj/item/clothing/under)
 
 /obj/item/storage/box/costume/clown
