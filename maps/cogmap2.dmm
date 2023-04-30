@@ -700,15 +700,6 @@
 	dir = 8
 	},
 /area/station/hallway/primary/southwest)
-"ceE" = (
-/obj/grille/catwalk{
-	dir = 4
-	},
-/turf/simulated/floor/airless/plating/catwalk{
-	dir = 4;
-	tag = "icon-catwalk (WEST)"
-	},
-/area/space)
 "chg" = (
 /obj/wingrille_spawn/auto/reinforced,
 /turf/simulated/floor/plating,
@@ -3648,9 +3639,7 @@
 	dir = 10;
 	icon_state = "catwalk_cross"
 	},
-/turf/simulated/floor/airless/plating/catwalk{
-	dir = 8
-	},
+/turf/space,
 /area/space)
 "dYe" = (
 /obj/cable{
@@ -4045,10 +4034,7 @@
 	dir = 9;
 	icon_state = "catwalk_cross"
 	},
-/turf/simulated/floor/airless/plating/catwalk{
-	dir = 4;
-	tag = "icon-catwalk (WEST)"
-	},
+/turf/space,
 /area/space)
 "eea" = (
 /obj/decal/tile_edge/line/black{
@@ -10792,9 +10778,7 @@
 /obj/grille/catwalk{
 	dir = 4
 	},
-/turf/simulated/floor/airless/plating/catwalk{
-	dir = 8
-	},
+/turf/space,
 /area/space)
 "fSR" = (
 /obj/machinery/floorflusher/solitary2,
@@ -11086,7 +11070,7 @@
 /obj/grille/catwalk{
 	dir = 5
 	},
-/turf/simulated/floor/airless/plating/catwalk,
+/turf/space,
 /area/space)
 "fWR" = (
 /obj/stool/chair/office/red{
@@ -13004,7 +12988,7 @@
 	icon_state = "0-4"
 	},
 /obj/firedoor_spawn,
-/turf/simulated/floor/circuit/green,
+/turf/simulated/floor/twotone/green,
 /area/station/turret_protected/Zeta)
 "gyt" = (
 /obj/disposalpipe/segment,
@@ -17586,10 +17570,7 @@
 	name = "autoname - SS13";
 	tag = ""
 	},
-/turf/simulated/floor/airless/plating/catwalk{
-	dir = 10;
-	icon_state = "catwalk_cross"
-	},
+/turf/space,
 /area/space)
 "hHT" = (
 /obj/storage/crate/abcumarker,
@@ -19916,6 +19897,10 @@
 /obj/machinery/traymachine/locking/crematorium{
 	id = "crematorium"
 	},
+/obj/machinery/crema_switch{
+	id = "crematorium";
+	pixel_y = 28
+	},
 /turf/simulated/floor/black,
 /area/station/medical/crematorium)
 "iom" = (
@@ -20402,10 +20387,7 @@
 /obj/grille/catwalk{
 	dir = 5
 	},
-/turf/simulated/floor/airless/plating/catwalk{
-	dir = 4;
-	icon_state = "catwalk_cross"
-	},
+/turf/space,
 /area/space)
 "iuR" = (
 /obj/pool/perspective{
@@ -23775,13 +23757,6 @@
 	dir = 5
 	},
 /area/station/science/chemistry)
-"joG" = (
-/obj/table/reinforced/auto,
-/obj/item/kitchen/food_box/lollipop,
-/obj/machinery/door/airlock/pyro/glass/windoor,
-/obj/access_spawn/medical,
-/turf/simulated/floor/specialroom/medbay,
-/area/station/medical/medbay)
 "joH" = (
 /obj/grille/catwalk/jen/side{
 	dir = 1
@@ -26229,6 +26204,10 @@
 /obj/machinery/hair_dye_dispenser,
 /turf/simulated/floor/wood/three,
 /area/station/crew_quarters/barber_shop)
+"jTi" = (
+/obj/machinery/launcher_loader/west,
+/turf/simulated/floor/black,
+/area/station/chapel/sanctuary)
 "jTl" = (
 /obj/machinery/atmospherics/pipe/simple{
 	dir = 4
@@ -26898,10 +26877,7 @@
 /obj/grille/catwalk{
 	icon_state = "catwalk_cross"
 	},
-/turf/simulated/floor/airless/plating/catwalk{
-	dir = 10;
-	icon_state = "catwalk_cross"
-	},
+/turf/space,
 /area/space)
 "kcP" = (
 /obj/decal/tile_edge/line/black{
@@ -29547,6 +29523,9 @@
 /obj/machinery/door/airlock/pyro/glass/windoor,
 /obj/access_spawn/medical,
 /obj/machinery/cashreg,
+/obj/item/kitchen/food_box/lollipop{
+	pixel_x = 9
+	},
 /turf/simulated/floor/specialroom/medbay,
 /area/station/medical/medbay)
 "kPH" = (
@@ -34334,6 +34313,12 @@
 	},
 /turf/simulated/floor/plating/jen,
 /area/station/science/lobby)
+"mbJ" = (
+/obj/grille/catwalk{
+	dir = 1
+	},
+/turf/space,
+/area/space)
 "mbL" = (
 /obj/disposalpipe/segment/morgue{
 	dir = 4
@@ -36206,10 +36191,7 @@
 /obj/grille/catwalk{
 	dir = 9
 	},
-/turf/simulated/floor/airless/plating/catwalk{
-	dir = 10;
-	icon_state = "catwalk_cross"
-	},
+/turf/space,
 /area/space)
 "myY" = (
 /obj/table/reinforced/auto,
@@ -57901,6 +57883,25 @@
 	dir = 1
 	},
 /area/station/quartermaster/office)
+"sdo" = (
+/obj/machinery/door/poddoor/pyro{
+	dir = 4;
+	id = "chapel_out";
+	name = "Chapel Mass Driver"
+	},
+/obj/machinery/mass_driver{
+	dir = 8;
+	drive_range = 100;
+	id = "chapel_out"
+	},
+/obj/forcefield/energyshield/perma/doorlink{
+	desc = "A door-linked force field that prevents gasses from passing through it.";
+	dir = 4;
+	name = "Door-linked Atmospheric Forcefield";
+	powerlevel = 1
+	},
+/turf/simulated/floor/black,
+/area/station/chapel/sanctuary)
 "sdv" = (
 /obj/machinery/sleeper/compact{
 	dir = 4
@@ -60119,6 +60120,21 @@
 	name = "test chamber plating"
 	},
 /area/station/science/testchamber)
+"sGl" = (
+/obj/machinery/door/airlock/pyro/glass{
+	name = "Genetics"
+	},
+/obj/access_spawn/medlab,
+/obj/firedoor_spawn,
+/obj/decal/tile_edge/stripe/extra_big{
+	dir = 1
+	},
+/turf/simulated/floor/white/checker2{
+	dir = 5
+	},
+/area/station/medical/research{
+	name = "Genetic Research"
+	})
 "sGm" = (
 /obj/disposalpipe/segment/mail{
 	dir = 4;
@@ -60621,10 +60637,7 @@
 /obj/grille/catwalk{
 	dir = 9
 	},
-/turf/simulated/floor/airless/plating/catwalk{
-	dir = 10;
-	icon_state = "catwalk_cross"
-	},
+/turf/space,
 /area/space)
 "sNy" = (
 /obj/machinery/vending/air_vendor,
@@ -62127,6 +62140,19 @@
 /obj/landmark/gps_waypoint,
 /turf/simulated/floor,
 /area/station/hallway/secondary/exit)
+"tjF" = (
+/obj/cable{
+	icon_state = "4-8"
+	},
+/obj/health_scanner/wall{
+	dir = 1;
+	find_in_range = 0;
+	id = "lobby_right";
+	name = "lobby health status screen";
+	pixel_y = -24
+	},
+/turf/simulated/floor/specialroom/medbay,
+/area/station/medical/medbay)
 "tjO" = (
 /turf/simulated/wall/auto/reinforced/jen/yellow,
 /area/station/solar/north)
@@ -62540,6 +62566,13 @@
 	},
 /turf/simulated/floor/plating,
 /area/station/turret_protected/armory_outside)
+"tqT" = (
+/obj/grille/catwalk{
+	dir = 5;
+	icon_state = "catwalk_cross"
+	},
+/turf/space,
+/area/space)
 "tqU" = (
 /obj/disposalpipe/segment{
 	dir = 4;
@@ -65507,25 +65540,6 @@
 	dir = 6
 	},
 /area/station/security/main)
-"ucS" = (
-/obj/machinery/door/poddoor/pyro{
-	dir = 4;
-	id = "chapel_out";
-	name = "Chapel Mass Driver"
-	},
-/obj/machinery/mass_driver{
-	dir = 8;
-	drive_range = 100;
-	id = "chapel_out"
-	},
-/obj/forcefield/energyshield/perma/doorlink{
-	desc = "A door-linked force field that prevents gasses from passing through it.";
-	dir = 4;
-	name = "Door-linked Atmospheric Forcefield";
-	powerlevel = 1
-	},
-/turf/simulated/floor/plating,
-/area/station/chapel/sanctuary)
 "ucT" = (
 /obj/disposalpipe/segment/morgue{
 	dir = 4
@@ -76027,19 +76041,6 @@
 "wMO" = (
 /turf/simulated/wall/auto/reinforced/jen,
 /area/station/hallway/primary/northeast)
-"wMX" = (
-/obj/grille/catwalk,
-/obj/landmark/magnet_shield,
-/obj/securearea{
-	desc = "A warning that demarcates where the magnetic area begins.";
-	icon_state = "magwarning";
-	name = "Magnet Area Boundary"
-	},
-/turf/simulated/floor/airless/plating/catwalk{
-	dir = 8;
-	icon_state = "catwalk_cross"
-	},
-/area/mining/magnet)
 "wNe" = (
 /obj/grille/catwalk/jen/side{
 	dir = 9
@@ -78006,12 +78007,6 @@
 /obj/item/match,
 /turf/simulated/floor/plating/jen,
 /area/station/maintenance/outer/se)
-"xog" = (
-/obj/grille/catwalk{
-	dir = 1
-	},
-/turf/simulated/floor/airless/plating/catwalk,
-/area/space)
 "xoj" = (
 /obj/disposalpipe/segment{
 	dir = 4;
@@ -78964,6 +78959,7 @@
 /area/station/crew_quarters/locker)
 "xAB" = (
 /obj/disposalpipe/segment,
+/obj/machinery/light/small/floor,
 /turf/simulated/floor/black,
 /area/space)
 "xAH" = (
@@ -79030,9 +79026,7 @@
 /obj/grille/catwalk{
 	dir = 6
 	},
-/turf/simulated/floor/airless/plating/catwalk{
-	dir = 8
-	},
+/turf/space,
 /area/space)
 "xBK" = (
 /obj/railing/cyan,
@@ -105713,7 +105707,6 @@ aaa
 aaa
 xrD
 nri
-wMX
 nri
 nri
 nri
@@ -105721,7 +105714,8 @@ nri
 nri
 nri
 nri
-wMX
+nri
+nri
 nri
 nri
 nri
@@ -106317,7 +106311,7 @@ aaa
 aaa
 aaa
 aaa
-ceE
+fSQ
 aFb
 aFb
 hHS
@@ -106619,15 +106613,15 @@ aaa
 aaa
 aaa
 aaa
-dMr
-xog
-dGy
+tqT
+mbJ
+myT
 fWO
 fWO
 fWO
 fWO
 fWO
-rzs
+xBu
 aaa
 aaa
 aaa
@@ -108244,8 +108238,8 @@ aqy
 sPN
 aqy
 aod
-aaa
-aaa
+sdo
+aod
 aaa
 aaa
 aaa
@@ -108432,15 +108426,15 @@ iBI
 uxZ
 exg
 lGk
-kIW
+mbJ
 iuK
-kIW
-kIW
-kIW
-kIW
-kIW
+mbJ
+mbJ
+mbJ
+mbJ
+mbJ
 iuK
-kIW
+mbJ
 lGk
 cKi
 exg
@@ -108546,7 +108540,7 @@ ary
 kpA
 joO
 aod
-ucS
+rIy
 aod
 aaa
 aaa
@@ -108848,7 +108842,7 @@ aqy
 sPN
 aqy
 eSF
-rIy
+jTi
 aod
 aaa
 aaa
@@ -115171,8 +115165,8 @@ nLY
 oZH
 ymh
 rnN
-pvf
-joG
+tjF
+txV
 kpa
 qHM
 rHj
@@ -124836,7 +124830,7 @@ fdZ
 ddd
 xqb
 ddd
-fNb
+sGl
 iYn
 krT
 dso
