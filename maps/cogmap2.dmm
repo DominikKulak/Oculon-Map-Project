@@ -80212,7 +80212,7 @@
 	icon_state = "1-2"
 	},
 /obj/firedoor_spawn,
-/turf/simulated/floor/plating/jen,
+/turf/simulated/floor/sanitary,
 /area/station/crew_quarters/showers)
 "xSr" = (
 /obj/disposalpipe/segment/mail{
