@@ -13836,6 +13836,9 @@
 /obj/machinery/alarm{
 	pixel_y = 24
 	},
+/obj/cable{
+	icon_state = "0-2"
+	},
 /turf/simulated/floor/plating,
 /area/station/storage/tech)
 "gIx" = (
@@ -13958,6 +13961,7 @@
 	dir = 1;
 	pixel_y = 21
 	},
+/obj/random_item_spawner/ai_experimental,
 /turf/simulated/floor/circuit,
 /area/station/turret_protected/ai_upload)
 "gKa" = (
@@ -15358,6 +15362,10 @@
 	},
 /turf/simulated/floor/circuit/white,
 /area/station/crew_quarters/arcade)
+"heC" = (
+/obj/machinery/navbeacon/tour/cog1/tour17,
+/turf/simulated/floor/wood/seven,
+/area/station/crew_quarters/cafeteria)
 "heL" = (
 /obj/disposalpipe/segment/mail,
 /turf/simulated/floor/neutral/side{
@@ -15486,7 +15494,6 @@
 /obj/cable{
 	icon_state = "0-2"
 	},
-/obj/critter/townguard,
 /turf/simulated/floor/shuttlebay{
 	name = "reinforced plating"
 	},
@@ -17229,10 +17236,6 @@
 "hCd" = (
 /obj/railing/yellow,
 /obj/decal/mule/beacon/no_auto_dropoff_spawn,
-/obj/machinery/navbeacon{
-	codes_txt = "delivery;dir=4";
-	location = "QM #2"
-	},
 /turf/simulated/floor/black,
 /area/station/quartermaster/office)
 "hCf" = (
@@ -20475,10 +20478,6 @@
 	pixel_y = 12
 	},
 /obj/item/device/multitool{
-	pixel_x = 11;
-	pixel_y = 11
-	},
-/obj/item/device/multitool{
 	pixel_x = 4;
 	pixel_y = 13
 	},
@@ -21694,6 +21693,7 @@
 	pixel_x = 32;
 	pixel_y = 0
 	},
+/obj/machinery/navbeacon/tour/cog1/tour6,
 /turf/simulated/floor/neutral/side{
 	dir = 4
 	},
@@ -27753,10 +27753,6 @@
 "knM" = (
 /obj/decal/mule/beacon/no_auto_dropoff_spawn,
 /obj/railing/yellow,
-/obj/machinery/navbeacon{
-	codes_txt = "delivery;dir=4";
-	location = "QM #1"
-	},
 /turf/simulated/floor/black,
 /area/station/quartermaster/office)
 "knN" = (
@@ -38445,14 +38441,6 @@
 	icon_state = "12"
 	},
 /area/shuttle/arrival/station)
-"naa" = (
-/obj/disposalpipe/segment,
-/obj/decal/cleanable/dirt/jen,
-/obj/critter/townguard,
-/turf/simulated/floor/shuttlebay{
-	name = "reinforced plating"
-	},
-/area/station/turret_protected/AIbaseoutside)
 "nan" = (
 /obj/disposalpipe/segment/mail{
 	dir = 4
@@ -53333,14 +53321,6 @@
 	},
 /turf/simulated/floor/plating/jen,
 /area/station/hallway/secondary/construction)
-"qRO" = (
-/obj/decal/tile_edge/line/grey{
-	dir = 8;
-	icon_state = "tile1"
-	},
-/obj/machinery/navbeacon/tour/cog1/tour6,
-/turf/simulated/floor/black/grime,
-/area/station/crew_quarters/quartersA)
 "qSd" = (
 /obj/cable{
 	icon_state = "1-2"
@@ -64915,10 +64895,6 @@
 	pixel_x = -8;
 	pixel_y = 10
 	},
-/obj/item/device/multitool{
-	pixel_x = -12;
-	pixel_y = 7
-	},
 /obj/disposalpipe/segment/mail{
 	dir = 4
 	},
@@ -70153,7 +70129,7 @@
 /turf/simulated/floor/black,
 /area/station/crew_quarters/hor)
 "vkU" = (
-/turf/simulated/floor/stairs{
+/turf/simulated/floor/stairs/wood2{
 	dir = 8
 	},
 /area/station/ranch)
@@ -71440,7 +71416,7 @@
 	dir = 1;
 	icon_state = "line1"
 	},
-/obj/stool/chair,
+/obj/stool/chair/blue,
 /obj/machinery/light/small/floor,
 /turf/simulated/floor/circuit,
 /area/station/crew_quarters/cafeteria)
@@ -72466,6 +72442,7 @@
 "vOW" = (
 /obj/machinery/portable_atmospherics/scrubber,
 /obj/decal/mule/beacon/no_auto_dropoff_spawn,
+/obj/machinery/light/small,
 /turf/simulated/floor/minitiles/black,
 /area/station/science/testchamber)
 "vOZ" = (
@@ -79151,6 +79128,7 @@
 /obj/machinery/light/emergency{
 	dir = 1
 	},
+/obj/item/device/radio/intercom/AI,
 /turf/simulated/floor/blueblack{
 	dir = 1
 	},
@@ -79355,7 +79333,7 @@
 	dir = 1;
 	icon_state = "line1"
 	},
-/obj/stool/chair,
+/obj/stool/chair/blue,
 /turf/simulated/floor/circuit,
 /area/station/crew_quarters/cafeteria)
 "xBL" = (
@@ -126927,7 +126905,7 @@ oNz
 oNz
 oNz
 oNz
-naa
+oNz
 oNz
 oNz
 oNz
@@ -127216,7 +127194,7 @@ sqk
 uKd
 hbR
 gIu
-uPO
+iGH
 hVN
 wKK
 hbR
@@ -132093,7 +132071,7 @@ mTX
 hZH
 rxi
 rxi
-qRO
+rxi
 rxi
 rxi
 rxf
@@ -147519,7 +147497,7 @@ sYY
 dXu
 lsf
 dMi
-dMi
+heC
 uvV
 gIS
 eUJ
